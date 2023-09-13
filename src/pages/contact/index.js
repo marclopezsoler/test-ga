@@ -56,10 +56,10 @@ export default function Contact() {
               <h1 className={`${styles.title} ${syne.className}`}>
                 let&apos;s get in touch
               </h1>
-              <h3 className={`${styles.subtitle} ${inter.className}`}>
+              <p className={`${styles.subtitle} ${inter.className}`}>
                 have something in mind?<br></br>let&apos;s transform your ideas
                 into reality together!
-              </h3>
+              </p>
             </section>
             <section
               className={`${styles.second_part} ${
