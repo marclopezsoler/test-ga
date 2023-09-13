@@ -2,6 +2,9 @@ import styles from "@/styles/Home.module.scss";
 import Head from "next/head";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Syne } from 'next/font/google'
+ 
+const syne = Syne({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -22,7 +25,7 @@ export default function Home() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.35 }}
         >
-      <main className={styles.main}>
+      <main className={`${styles.main} ${syne.className}`}>
         <Link href="/contact">GO TO CONTACT</Link>
       </main>
       </motion.div>
