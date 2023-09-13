@@ -1,8 +1,13 @@
+"use client";
 import ContactForm from "@/components/ContactForm";
 import styles from "@/styles/Contact.module.scss";
 import { motion } from "framer-motion";
+import { Inter, Syne } from "next/font/google";
 import Head from "next/head";
 import { useEffect, useState } from "react";
+
+const syne = Syne({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function contact() {
   useEffect(() => {
@@ -41,26 +46,26 @@ export default function contact() {
         transition={{ duration: 0.35 }}
       >
         <main className={styles.main}>
-        <div className={styles.contact_page}>
-          <section
-            className={`${styles.first_part} ${
-              contactLoads === 1 ? styles.animateLeft : ""
-            }`}
-          >
-            <h1 className={styles.title}>let's get in touch</h1>
-            <h3 className={styles.subtitle}>
-              have something in mind?<br></br>let's transform your ideas into
-              reality together!
-            </h3>
-          </section>
-          <section
-            className={`${styles.second_part} ${
-              contactLoads === 1 ? styles.animateRight : ""
-            }`}
-          >
-            <ContactForm />
-          </section>
-        </div>
+          <div className={styles.contact_page}>
+            <section
+              className={`${styles.first_part} ${
+                contactLoads === 1 ? styles.animateLeft : ""
+              }`}
+            >
+              <h1 className={`${styles.title} ${syne.className}`}>let's get in touch</h1>
+              <h3 className={`${styles.subtitle} ${inter.className}`}>
+                have something in mind?<br></br>let's transform your ideas into
+                reality together!
+              </h3>
+            </section>
+            <section
+              className={`${styles.second_part} ${
+                contactLoads === 1 ? styles.animateRight : ""
+              }`}
+            >
+              <ContactForm />
+            </section>
+          </div>
         </main>
       </motion.div>
     </>

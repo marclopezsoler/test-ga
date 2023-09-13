@@ -1,6 +1,11 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+"use client"
 import styles from "@/styles/components/ContactForm.module.scss";
+import emailjs from "@emailjs/browser";
+import { Inter, Syne } from "next/font/google";
+import { useRef, useState } from "react";
+
+const syne = Syne({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -26,7 +31,7 @@ export default function ContactForm() {
           setEmail("");
           setMessage("");
           setSent(true);
-          setTimeout(() =>{
+          setTimeout(() => {
             setSent(false);
           }, "3000");
         },
@@ -38,7 +43,7 @@ export default function ContactForm() {
 
   return (
     <form ref={form} onSubmit={sendEmail} className={styles.main}>
-      <div>
+      <div className={inter.className}>
         <label>Name *</label>
         <input
           type="text"
@@ -50,7 +55,7 @@ export default function ContactForm() {
           onChange={(e) => setName(e.target.value)}
         />
       </div>
-      <div>
+      <div className={inter.className}>
         <label>Email *</label>
         <input
           type="email"
@@ -62,21 +67,27 @@ export default function ContactForm() {
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
-      <div>
+      <div className={inter.className}>
         <label>Message *</label>
         <textarea
           name="message"
           value={message}
-          className={styles.message}
+          className={`${styles.message} ${inter.className}`}
           placeholder="Say something..."
           required
           onChange={(e) => setMessage(e.target.value)}
         />
       </div>
       <button className={styles.button_parent}>
-        <input type="submit" value="SEND MESSAGE" className={styles.button} />
+        <input
+          type="submit"
+          value="SEND MESSAGE"
+          className={`${styles.button} ${syne.className}`}
+        />
       </button>
-      <p className={`${styles.sent} ${sent ? styles.show : ""}`}>Your message has been successfully sent!</p>
+      <p className={`${styles.sent} ${sent ? styles.show : ""}`}>
+        Your message has been successfully sent!
+      </p>
     </form>
   );
 }
