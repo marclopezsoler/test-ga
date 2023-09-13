@@ -15,13 +15,13 @@ export default function Highlight({
       <div className={styles.first_part}>
         <div className={styles.first_part_child}>
           <h2 className={styles.title}>{title}</h2>
-          <Image
+          {/* <Image
             src={require(`../assets/images/home/highlighted/${filename_small}`)}
             width={350}
             height={350}
             className={styles.highlight_small_image}
             alt={title}
-          />
+          /> */}
           <h3 className={styles.subtitle}>{subtitle}</h3>
         </div>
       </div>
