@@ -1,9 +1,27 @@
-import styles from "@/styles/Home.module.scss";
+import ContactForm from "@/components/ContactForm";
+import styles from "@/styles/Contact.module.scss";
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [contactLoads, setContactLoads] = useState(0);
+
+  useEffect(() => {
+    let count = sessionStorage.getItem("contactLoads");
+    if (count === null) {
+      count = 1;
+    } else {
+      count = Number(count) + 1;
+    }
+    sessionStorage.setItem("contactLoads", count);
+
+    setContactLoads(count);
+  }, []);
   return (
     <>
       <Head>
@@ -23,7 +41,26 @@ export default function contact() {
         transition={{ duration: 0.35 }}
       >
         <main className={styles.main}>
-          <Link href="/">GO TO HOME</Link>
+        <div className={styles.contact_page}>
+          <section
+            className={`${styles.first_part} ${
+              contactLoads === 1 ? styles.animateLeft : ""
+            }`}
+          >
+            <h1 className={styles.title}>let's get in touch</h1>
+            <h3 className={styles.subtitle}>
+              have something in mind?<br></br>let's transform your ideas into
+              reality together!
+            </h3>
+          </section>
+          <section
+            className={`${styles.second_part} ${
+              contactLoads === 1 ? styles.animateRight : ""
+            }`}
+          >
+            <ContactForm />
+          </section>
+        </div>
         </main>
       </motion.div>
     </>
