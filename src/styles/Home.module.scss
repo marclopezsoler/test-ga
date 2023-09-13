@@ -75,17 +75,14 @@
 }
 
 .animate_titleY {
-  font-weight: 800;
   animation: animateTitleY 1.25s;
 }
 
 .animate_titleX {
-  font-weight: 800;
   animation: animateTitleX 1.25s;
 }
 
 .animate_titleX2 {
-  font-weight: 800;
   animation: animateTitleX2 1.25s;
 }
 
@@ -99,6 +96,7 @@
     transform: translateY(-400px);
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -110,6 +108,7 @@
   }
 
   100% {
+    opacity: 1;
     transform: translateX(0);
   }
 }
@@ -121,6 +120,7 @@
   }
 
   100% {
+    opacity: 1;
     transform: translateX(0);
   }
 }

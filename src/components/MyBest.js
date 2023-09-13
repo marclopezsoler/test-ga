@@ -6,7 +6,7 @@ const syne = Syne({ subsets: ["latin"] });
 export default function MyBest({ title }) {
   return (
     <div className={styles.best_container}>
-      <h5 className={`${styles.title} ${syne.className}`}>{title}</h5>
+      <p className={`${styles.title} ${syne.className}`}>{title}</p>
     </div>
   );
 }

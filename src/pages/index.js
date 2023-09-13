@@ -1,15 +1,33 @@
-import styles from "@/styles/Home.module.scss";
-import Head from "next/head";
-import Link from "next/link";
-import { motion } from "framer-motion";
+import Highlight from "@/components/Highlight";
 import MyBest from "@/components/MyBest";
-import { Syne } from "next/font/google";
-import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.scss";
+import { motion } from "framer-motion";
+import { Inter, Syne } from "next/font/google";
+import Head from "next/head";
+import { useEffect, useState } from "react";
 
 const syne = Syne({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [homeLoads, setHomeLoads] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    let count = sessionStorage.getItem("homeLoads");
+    if (count === null) {
+      count = 1;
+    } else {
+      count = Number(count) + 1;
+    }
+    sessionStorage.setItem("homeLoads", count);
+
+    setHomeLoads(count);
+  }, []);
+
   return (
     <>
       <Head>
@@ -29,6 +47,41 @@ export default function Home() {
         transition={{ duration: 0.35 }}
       >
         <main className={`${styles.main} ${syne.className}`}>
+          <section className={`${styles.home_section_1} ${syne.className}`}>
+            <div className={styles.title_parent}>
+              <h1
+                className={`${styles.home_title} ${
+                  homeLoads === 1 ? styles.animate_titleY : ""
+                }`}
+              >
+                creative
+              </h1>
+              <div className={styles.title_parent2}>
+                <h1
+                  className={`${styles.home_title} ${
+                    homeLoads === 1 ? styles.animate_titleX2 : ""
+                  }`}
+                >
+                  digital{" "}
+                </h1>
+                <h1
+                  className={`${styles.home_title} ${
+                    homeLoads === 1 ? styles.animate_titleX : ""
+                  }`}
+                >
+                  artist
+                </h1>
+              </div>
+            </div>
+            <h2
+              className={`${styles.home_subtitle} ${
+                homeLoads === 1 ? styles.animate_subtitle : ""
+              }`}
+            >
+              marc lópez is a digital artist and developer from Barcelona, he's
+              keen on creating cool and simple stuff
+            </h2>
+          </section>
           <section className={styles.home_section_2}>
             <h2 className={`${styles.subtitle_part2} ${syne.className}`}>what I do best</h2>
             <p className={`${styles.p} ${inter.className}`}>These are some aspects I excel at, for further detail, go to the about section!</p>
@@ -39,6 +92,30 @@ export default function Home() {
               <MyBest title={"Graphic Design"} />
               <MyBest title={"UI Design"} />
               <MyBest title={"Social Media managing"} />
+            </div>
+          </section>
+          <section className={styles.home_section_3}>
+            <div className={styles.highlight_container}>
+              <h2 className={`${styles.h2} ${syne.className}`}>highlighted projects</h2>
+              <p className={`${styles.p} ${inter.className}`}>Check out a few highlighted projects, if you want to explore more of them, go to the work section!</p>
+              <div className={styles.highlight_parent}>
+                <Highlight
+                  title={`generative splatter paintings`}
+                  filename_small={`pollock.png`}
+                  filename_big={`video_tfg.gif`}
+                  subtitle={`final degree project`}
+                  link={`work5`}
+                  selected={1}
+                />
+                <Highlight
+                  title={`happenin' app`}
+                  filename_small={`happenin.jpg`}
+                  filename_big={`happenin_video.gif`}
+                  subtitle={`events mobile app`}
+                  link={`work4`}
+                  selected={2}
+                />
+              </div>
             </div>
           </section>
           <section className={`${styles.home_section_4} ${syne.className}`}>
