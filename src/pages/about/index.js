@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 
-export default function about() {
+export default function About() {
   return (
     <>
       <Head>

@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 const syne = Syne({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 
-export default function contact() {
+export default function Contact() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
