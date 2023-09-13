@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import MyBest from "@/components/MyBest";
 import Highlight from "@/components/Highlight";
-import { Syne } from 'next/font/google'
- 
-const syne = Syne({ subsets: ['latin'] })
+import { Syne } from "next/font/google";
+
+const syne = Syne({ subsets: ["latin"] });
 
 export default function Home() {
   const [homeLoads, setHomeLoads] = useState(0);
@@ -95,33 +95,6 @@ export default function Home() {
               <MyBest title={"Graphic Design"} />
               <MyBest title={"UI Design"} />
               <MyBest title={"Social Media managing"} />
-            </div>
-          </section>
-          <section className={styles.home_section_3}>
-            <div className={styles.highlight_container}>
-              <h2 className={styles.h2}>highlighted projects</h2>
-              <p className={styles.p}>
-                Check out a few highlighted projects, if you want to explore
-                more of them, go to the work section!
-              </p>
-              <div className={styles.highlight_parent}>
-                {/* <Highlight
-                  title={`generative splatter paintings`}
-                  filename_small={`pollock.png`}
-                  filename_big={`video_tfg.gif`}
-                  subtitle={`final degree project`}
-                  link={`work5`}
-                  selected={1}
-                />
-                <Highlight
-                  title={`happenin' app`}
-                  filename_small={`happenin.jpg`}
-                  filename_big={`happenin_video.gif`}
-                  subtitle={`events mobile app`}
-                  link={`work4`}
-                  selected={2}
-                /> */}
-              </div>
             </div>
           </section>
           <section className={styles.home_section_4}>
