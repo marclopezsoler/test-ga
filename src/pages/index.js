@@ -1,11 +1,9 @@
-import styles from "@/styles/Home.module.scss";
-import Head from "next/head";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import MyBest from "@/components/MyBest";
-import Highlight from "@/components/Highlight";
+import styles from "@/styles/Home.module.scss";
+import { motion } from "framer-motion";
 import { Syne } from "next/font/google";
+import Head from "next/head";
+import { useEffect, useState } from "react";
 
 const syne = Syne({ subsets: ["latin"] });
 
