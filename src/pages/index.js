@@ -1,4 +1,3 @@
-import MyBest from "@/components/MyBest";
 import styles from "@/styles/Home.module.scss";
 import { motion } from "framer-motion";
 import { Syne } from "next/font/google";
@@ -79,21 +78,6 @@ export default function Home() {
               marc lópez is a digital artist and developer from Barcelona, he's
               keen on creating cool and simple stuff
             </h2>
-          </section>
-          <section className={styles.home_section_2}>
-            <h2 className={styles.subtitle_part2}>what I do best</h2>
-            <p className={styles.p}>
-              These are some aspects I excel at, for further detail, go to the
-              about section!
-            </p>
-            <div className={styles.best_parent}>
-              <MyBest title={"Front End Developing"} />
-              <MyBest title={"Responsive Web & Apps"} />
-              <MyBest title={"SEO, Google Analytics and MyBusiness"} />
-              <MyBest title={"Graphic Design"} />
-              <MyBest title={"UI Design"} />
-              <MyBest title={"Social Media managing"} />
-            </div>
           </section>
           <section className={styles.home_section_4}>
             <h2 className={styles.section4_title}>
