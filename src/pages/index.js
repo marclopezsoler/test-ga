@@ -2,29 +2,10 @@ import styles from "@/styles/Home.module.scss";
 import { motion } from "framer-motion";
 import { Syne } from "next/font/google";
 import Head from "next/head";
-import { useEffect, useState } from "react";
 
 const syne = Syne({ subsets: ["latin"] });
 
 export default function Home() {
-  const [homeLoads, setHomeLoads] = useState(0);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  useEffect(() => {
-    let count = sessionStorage.getItem("homeLoads");
-    if (count === null) {
-      count = 1;
-    } else {
-      count = Number(count) + 1;
-    }
-    sessionStorage.setItem("homeLoads", count);
-
-    setHomeLoads(count);
-  }, []);
-
   return (
     <>
       <Head>
@@ -46,35 +27,13 @@ export default function Home() {
         <main className={`${styles.main} ${syne.className}`}>
           <section className={styles.home_section_1}>
             <div className={styles.title_parent}>
-              <h1
-                className={`${styles.home_title} ${
-                  homeLoads === 1 ? styles.animate_titleY : ""
-                }`}
-              >
-                creative
-              </h1>
+              <h1 className={`${styles.home_title}`}>creative</h1>
               <div className={styles.title_parent2}>
-                <h1
-                  className={`${styles.home_title} ${
-                    homeLoads === 1 ? styles.animate_titleX2 : ""
-                  }`}
-                >
-                  digital{" "}
-                </h1>
-                <h1
-                  className={`${styles.home_title} ${
-                    homeLoads === 1 ? styles.animate_titleX : ""
-                  }`}
-                >
-                  artist
-                </h1>
+                <h1 className={`${styles.home_title}`}>digital </h1>
+                <h1 className={`${styles.home_title}`}>artist</h1>
               </div>
             </div>
-            <h2
-              className={`${styles.home_subtitle} ${
-                homeLoads === 1 ? styles.animate_subtitle : ""
-              }`}
-            >
+            <h2 className={`${styles.home_subtitle}`}>
               marc lópez is a digital artist and developer from Barcelona, he's
               keen on creating cool and simple stuff
             </h2>
