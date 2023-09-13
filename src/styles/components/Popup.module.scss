@@ -1,0 +1,58 @@
+@import "../utilities/Variables.scss";
+
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  z-index: 9999999999999999999999999999999999;
+}
+
+.popup {
+  max-width: 100vw;
+  position: fixed;
+  color: $blue;
+  font-weight: 500;
+  width: 80%;
+  text-align: center;
+  padding: 2%;
+  border: 2px solid $green;
+
+  top: -25vh;
+
+  background-color: $greenop;
+  box-shadow: 0 8px 32px 0 $blueop;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 1000px;
+  border: 1px solid $green;
+
+  z-index: 9999999999999999999999999999999999;
+
+  user-select: none;
+  pointer-events: none;
+}
+
+.animate {
+  animation: movePopup 6s forwards;
+  animation-delay: 5s;
+}
+
+@keyframes movePopup {
+  0% {
+    top: -25vh;
+  }
+
+  20% {
+    top: 4vh;
+  }
+
+  80% {
+    top: 4vh;
+  }
+
+  100% {
+    top: -25vh;
+  }
+}

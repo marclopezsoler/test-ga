@@ -1,6 +1,7 @@
 import Cursor from "@/components/Cursor";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Popup from "@/components/Popup";
 import "@/styles/globals.scss";
 import Script from "next/script";
 import { isMobile } from "react-device-detect";
@@ -22,7 +23,7 @@ export default function App({ Component, pageProps }) {
       </Script>
 
       <Header />
-      {isMobile ? "" : <Cursor />}
+      {isMobile ? <Popup /> : <Cursor />}
       <Component {...pageProps} />
       <Footer />
     </>
