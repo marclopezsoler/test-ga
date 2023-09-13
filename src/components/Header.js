@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <>
     <nav className={`${styles.nav_extended}`}>
-      <button className={styles.toggle} onClick={toggleMenu}>{isMenuOpen ? "x" : "m"}</button>
+      <button className={`${styles.toggle} ${syne.className}`} onClick={toggleMenu}>{isMenuOpen ? "x" : "m"}</button>
       <div className={` ${isMenuOpen ? styles.show_element : styles.hide_element} ${styles.nav_menu_parent}`}>
         <div className={`${styles.nav_menu} ${syne.className}`}>
           <Link href="/" className={`${styles.menu_item} ${isMenuOpen ? "" : styles.hide1}`} onClick={closeMenu}>home</Link>
