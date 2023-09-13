@@ -1,0 +1,135 @@
+@import "../utilities/Variables.scss";
+
+.highlight_box {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 5%;
+  height: 65vh;
+  color: $green;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.first_part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+//   font-family: $font-titles;
+  text-decoration: none;
+
+  width: 50vw;
+  border: 1px solid $green;
+
+
+  .first_part_child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    height: 98%;
+    padding: 1%;
+
+    .title {
+      width: 100%;
+      // font-family: $font-titles;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .subtitle {
+      width: 35%;
+      text-align: center;
+      // font-family: $font-texts;
+      font-weight: 400;
+      font-size: $p;
+    }
+  }
+}
+
+.highlight_small_image {
+  width: 40%;
+  height: auto;
+}
+
+.second_part {
+  width: 50vw;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid $green;
+}
+
+.selected {
+//   font-family: $font-titles;
+  font-weight: 500;
+  font-size: $p;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+
+  transform: scale(1.5);
+  transform-origin: right;
+}
+
+.selected_num {
+  font-size: $span;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .highlight_box {
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .first_part,
+  .second_part {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .first_part {
+    height: 25vh;
+    border-radius: 0;
+    padding: 0;
+    border: 0;
+    
+    .first_part_child {
+      border: 1px solid $green;
+      width: 88%;
+      gap: 0.75em;
+
+      .title {
+        padding: 0;
+        margin: 0;
+      }
+
+      .subtitle {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        font-size: $mobile_p;
+      }
+    }
+  }
+
+  .highlight_small_image {
+    display: none;
+  }
+
+  .second_part {
+    height: 100vh;
+    width: 100%;
+  }
+}
