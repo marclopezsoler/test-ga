@@ -27,7 +27,7 @@ export default function Highlight({
       <div
         className={styles.second_part}
         style={{
-          backgroundImage: `url('../assets/images/home/highlighted/${filename_big}')`,
+          // backgroundImage: `url('../assets/images/home/highlighted/${filename_big}')`,
         }}
       >
         <span className={styles.selected}>
