@@ -105,7 +105,7 @@ export default function Home() {
                 more of them, go to the work section!
               </p>
               <div className={styles.highlight_parent}>
-                <Highlight
+                {/* <Highlight
                   title={`generative splatter paintings`}
                   filename_small={`pollock.png`}
                   filename_big={`video_tfg.gif`}
@@ -120,7 +120,7 @@ export default function Home() {
                   subtitle={`events mobile app`}
                   link={`work4`}
                   selected={2}
-                />
+                /> */}
               </div>
             </div>
           </section>
