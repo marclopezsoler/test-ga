@@ -100,7 +100,7 @@ export default function About() {
               <section className={styles.first_content}>
                 <div className={styles.text_parent}>
                   <h1 className={`${styles.title} ${syne.className}`}>
-                    IT'S ME,<br></br>
+                    IT&apos;S ME,<br></br>
                     <b className={styles.bold}>marc lópez</b>
                   </h1>
                   <p className={`${styles.tag} ${inter.className}`} id="word">
@@ -159,8 +159,8 @@ export default function About() {
                   editor, gaining expertise in video editing and file
                   management.
                   <br></br>
-                  <br></br>currently, I'm with Dfusió, a local communication
-                  agency, where I've evolved into a multimedia developer. Here,
+                  <br></br>currently, I&apos;m with Dfusió, a local communication
+                  agency, where I&apos;ve evolved into a multimedia developer. Here,
                   I build websites from scratch, maintain them, design various
                   promotional materials, manage social media accounts, and
                   analyze website and social media traffic using various
@@ -249,13 +249,13 @@ export default function About() {
                   <br></br>
                   <br></br>finally, generative art is a hobby I discovered
                   recenlty, and helps me connect coding and design on a really
-                  interesting way. I'm sure you'll hear about me soon talking
+                  interesting way. I&apos;m sure you&apos;ll hear about me soon talking
                   more and more about generative art!
                 </p>
               </div>
               <div className={`${styles.contact} ${syne.className}`}>
                 <p>
-                  do you want to know more about me?<br></br>then, let's get in
+                  do you want to know more about me?<br></br>then, let&apos;s get in
                   touch
                 </p>
                 <Link href="/contact" className={styles.link}>
