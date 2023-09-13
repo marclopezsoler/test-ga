@@ -20,6 +20,7 @@ export default function Highlight({
             width={350}
             height={350}
             className={styles.highlight_small_image}
+            alt={title}
           />
           <h3 className={styles.subtitle}>{subtitle}</h3>
         </div>
