@@ -2,9 +2,9 @@
 import ContactForm from "@/components/ContactForm";
 import styles from "@/styles/Contact.module.scss";
 import { motion } from "framer-motion";
-import { Inter, Syne } from "next/font/google";
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import { Inter, Syne } from "next/font/google";
 
 const syne = Syne({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
