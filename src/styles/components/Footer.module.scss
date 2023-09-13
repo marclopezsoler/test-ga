@@ -1,0 +1,44 @@
+@import "../utilities/Variables.scss";
+
+.footer {
+   flex-shrink: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1em;
+   z-index: 2;
+ }
+ 
+ .footer_row {
+   font-size: $tags;
+ 
+   &:nth-child(1) {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     margin: 2em 2em 0 2em;
+     gap: 1em;
+   }
+ 
+   &:nth-child(2) {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin: 0 2em 2em 2em;
+   }
+ }
+ 
+ .footer_link {
+   font-family: $font-titles;
+   color: $green;
+   text-decoration: none;
+ }
+ 
+ .footer_copy {
+   font-family: $font-titles;
+   color: $green;
+ }
+ 

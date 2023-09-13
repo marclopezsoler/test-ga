@@ -1,5 +1,9 @@
-import "@/styles/globals.css";
+import Cursor from "@/components/Cursor";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import "@/styles/globals.scss";
 import Script from "next/script";
+import { isMobile } from "react-device-detect";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -17,7 +21,10 @@ export default function App({ Component, pageProps }) {
         `}
       </Script>
 
+      <Header />
+      {isMobile ? "" : <Cursor />}
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

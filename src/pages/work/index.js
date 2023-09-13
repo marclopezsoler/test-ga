@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 
-export default function contact() {
+export default function work() {
   return (
     <>
       <Head>
-        <title>contact | marc lópez portfolio</title>
+        <title>work | marc lópez portfolio</title>
         <meta
           name="description"
           content="portfolio website of marc lópez created using nextjs"
