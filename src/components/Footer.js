@@ -1,10 +1,13 @@
 import styles from "@/styles/components/Footer.module.scss";
 import Link from "next/link";
+import { Syne } from 'next/font/google'
+ 
+const syne = Syne({ subsets: ['latin'] })
 
 export default function Footer() {
   return (
     <nav className={styles.footer}>
-      <section className={styles.footer_row}>
+      <section className={`${styles.footer_row} ${syne.className}`}>
         <Link href="/" className={styles.footer_link}>Home</Link>
         <Link href="/work" className={styles.footer_link}>Work</Link>
         <Link href="/about" className={styles.footer_link}>About</Link>
@@ -15,7 +18,7 @@ export default function Footer() {
         <a href="https://twitter.com/marclopezsoler" target="_blank" className={styles.footer_link}>Twitter</a>
           <a href="https://files.marclopez.xyz/CV_MarcLopez.pdf" target="_blank" className={styles.footer_link}>CV</a>
       </section>
-      <section className={styles.footer_row}>
+      <section className={`${styles.footer_row} ${syne.className}`}>
         <span className={styles.footer_copy}>© 2023 Portfolio by Marc López</span>
       </section>
     </nav>
