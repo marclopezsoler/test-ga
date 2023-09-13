@@ -78,7 +78,7 @@ export default function Home() {
                 homeLoads === 1 ? styles.animate_subtitle : ""
               }`}
             >
-              marc lópez is a digital artist and developer from Barcelona, he's
+              marc lópez is a digital artist and developer from Barcelona, he&apos;s
               keen on creating cool and simple stuff
             </h2>
           </section>
@@ -97,7 +97,7 @@ export default function Home() {
           <section className={styles.home_section_3}>
             <div className={styles.highlight_container}>
               <h2 className={`${styles.h2} ${syne.className}`}>highlighted projects</h2>
-              <p className={`${styles.p} ${inter.className}`}>Check out a few highlighted projects, if you want to explore more of them, go to the work section!</p>
+              <p className={`${styles.p} ${inter.cl}`}>Check out a few highlighted projects, if you want to explore more of them, go to the work section!</p>
               <div className={styles.highlight_parent}>
                 <Highlight
                   title={`generative splatter paintings`}
