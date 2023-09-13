@@ -27,6 +27,7 @@ export default function Contact() {
 
     setContactLoads(count);
   }, []);
+
   return (
     <>
       <Head>
@@ -39,7 +40,7 @@ export default function Contact() {
         <link rel="icon" href="/icon.ico" />
       </Head>
       <motion.div
-        className="container text-center  bg-black"
+        className="container text-center bg-black"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -52,10 +53,12 @@ export default function Contact() {
                 contactLoads === 1 ? styles.animateLeft : ""
               }`}
             >
-              <h1 className={`${styles.title} ${syne.className}`}>let's get in touch</h1>
+              <h1 className={`${styles.title} ${syne.className}`}>
+                let&apos;s get in touch
+              </h1>
               <h3 className={`${styles.subtitle} ${inter.className}`}>
-                have something in mind?<br></br>let's transform your ideas into
-                reality together!
+                have something in mind?<br></br>let&apos;s transform your ideas
+                into reality together!
               </h3>
             </section>
             <section
