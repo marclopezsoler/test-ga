@@ -10,7 +10,7 @@ export default function NextWork({ nextWork }) {
   return (
     <div className={styles.main}>
       <p className={`${styles.text} ${inter.className}`}>
-        like what you're seeing?<br></br>take a look at another work{" "}
+        like what you&apos;re seeing?<br></br>take a look at another work{" "}
         <span className={styles.link_parent}>
           <Link
             href={`/work/work${nextWork}`}
