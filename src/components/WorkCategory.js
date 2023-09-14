@@ -8,7 +8,7 @@ const syne = Syne({ subsets: ["latin"] });
 function WorkCategory({ works, categoryType, hoveredItemId, setHoveredItemId, localX, localY }) {
 
   return (
-    <div id={`${categoryType} ${hoveredItemId}`} className={`${styles.work_type} ${syne.className}`}>
+    <div id={`${categoryType}`} className={`${styles.work_type} ${syne.className}`}>
       <h2 className={styles.category_type}>{categoryType}</h2>
       {works.map((work) =>
         work.category === categoryType ? (
@@ -20,7 +20,7 @@ function WorkCategory({ works, categoryType, hoveredItemId, setHoveredItemId, lo
             onMouseEnter={() => setHoveredItemId(work.id)}
             onMouseLeave={() => setHoveredItemId(null)}
           >
-            <Link href={`/work/${work.id}`} className={styles.link}>
+            <Link href={`/work/${work.id}`} className={styles.link} id={work.id}>
               <p className={`${styles.title} ${syne.className}`}>
                 <span>{work.type}</span>
                 <span className={styles.space}>/</span>

@@ -77,36 +77,36 @@ export default function WorkDetailPage() {
             </div>
             <div className={styles.detail_content}>
               <div className={styles.info}>
-                <h2 id={styles.subtitle} className={`${styles.subtitle} ${syne.className}`}>
+                <h2 id={`${styles.subtitle} ${work.id} ${"0"}`} className={`${styles.subtitle} ${syne.className}`}>
                   {work.subtitle1}
                 </h2>
-                <p className={`${styles.description} ${inter.className}`} id={styles.p}>
+                <p className={`${styles.description} ${inter.className}`} id={`${styles.p} ${work.id}`}>
                   {work.description}
                 </p>
               </div>
               <div className={styles.details}>
                 <div className={work.roles ? "" : styles.hide}>
-                  <span id={`${styles.span} ${"1"}`} className={syne.className}>roles</span>
-                  <p id={styles.p} className={inter.className}>{work.roles}</p>
+                  <span id={`${styles.span} ${work.id} ${"1"}`} className={syne.className}>roles</span>
+                  <p id={`${styles.p} ${work.id} ${"1"}`} className={inter.className}>{work.roles}</p>
                 </div>
                 <div className={work.date ? "" : styles.hide}>
-                  <span id={`${styles.span} ${"2"}`} className={syne.className}>date</span>
-                  <p id={styles.p} className={inter.className}>{work.date}</p>
+                  <span id={`${styles.span} ${work.id} ${"2"}`} className={syne.className}>date</span>
+                  <p id={`${styles.p} ${work.id} ${"2"}`} className={inter.className}>{work.date}</p>
                 </div>
                 <div className={work.client ? "" : styles.hide}>
-                  <span id={`${styles.span} ${"3"}`} className={syne.className}>client</span>
-                  <p id={styles.p} className={inter.className}>{work.client}</p>
+                  <span id={`${styles.span} ${work.id} ${"3"}`} className={syne.className}>client</span>
+                  <p id={`${styles.p} ${work.id} ${"3"}`} className={inter.className}>{work.client}</p>
                 </div>
                 <div>
                   <span
-                    id={`${styles.span} ${"4"}`}
+                    id={`${styles.span} ${work.id} ${"4"}`}
                     className={`${work.link === "" ? styles.hide : ""} ${syne.className}`}
                   >
                     link
                   </span>
                   <a
                     href={work.link}
-                    id={styles.p}
+                    id={`${styles.p} ${work.id} ${"4"}`}
                     target="_blank"
                     className={`${work.link === "" ? styles.hide : ""} ${inter.className}`}
                   >
