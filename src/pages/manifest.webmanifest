@@ -6,17 +6,17 @@
    "start_url": "/",
    "name": "marc lópez portfolio",
    "short_name": "marc_lopez_portfolio",
-   "description": "portfolio website of marc lópez. Discover all his projects and experience here!",
+   "description": "This is Marc López's portfolio website, where you can check all his projects and experience.",
    "prefer_related_applications": true,
    "icons": [
       {
-         "src": "/assets/icons/icon_512.png",
+         "src": "../public/assets/icons/icon_512.png",
          "sizes": "512x512",
          "type": "image/png",
          "purpose": "maskable"
       },
       {
-         "src": "/assets/icons/icon_192.png",
+         "src": "../public/assets/icons/icon_192.png",
          "sizes": "192x192",
          "type": "image/png",
          "purpose": "maskable"
