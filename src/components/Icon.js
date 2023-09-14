@@ -5,17 +5,18 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Icon({ url, name }) {
+  const imageUrl = require(`/src/assets/images/about/icons/${url}`);
+
   return (
     <div className={styles.icon_parent}>
       <p className={inter.className}>{name}</p>
-      {/* <Image
-      // src={`/public/assets/images/about/icons/${url}`}
-      src=""
+      <Image
+      src={imageUrl}
       width={300}
       height={300}
       className={styles.icon}
       alt={name}
-    /> */}
+    />
     </div>
   );
 }
