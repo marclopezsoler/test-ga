@@ -72,6 +72,7 @@ export default function Work() {
                 <div className={styles.work_tags}>
                   <a href="#developing">dev</a>
                   <a href="#design">design</a>
+                  <a href="#photo">photo</a>
                   <a href="#other">other</a>
                 </div>
               </section>
@@ -93,6 +94,11 @@ export default function Work() {
                   <WorkCategory
                     works={works}
                     categoryType="design"
+                    {...{ hoveredItemId, setHoveredItemId, localX, localY }}
+                  />
+                  <WorkCategory
+                    works={works}
+                    categoryType="photo"
                     {...{ hoveredItemId, setHoveredItemId, localX, localY }}
                   />
                   <WorkCategory
