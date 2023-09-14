@@ -102,7 +102,7 @@ export default function Home() {
                 <Highlight
                   title={`generative splatter paintings`}
                   filename_small={`pollock.png`}
-                  filename_big={`video_tfg.gif`}
+                  short_name={`tfg`}
                   subtitle={`final degree project`}
                   link={`work5`}
                   selected={1}
@@ -110,7 +110,7 @@ export default function Home() {
                 <Highlight
                   title={`happenin' app`}
                   filename_small={`happenin.jpg`}
-                  filename_big={`happenin_video.gif`}
+                  short_name={`happenin`}
                   subtitle={`events mobile app`}
                   link={`work4`}
                   selected={2}

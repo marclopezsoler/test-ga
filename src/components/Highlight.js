@@ -9,13 +9,12 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Highlight({
   title,
   filename_small,
-  filename_big,
+  short_name,
   subtitle,
   link,
   selected,
 }) {
-  const smallImage = require(`/src/assets/images/home/highlighted/${filename_small}`)
-  const bigImage = require(`/src/assets/images/home/highlighted/${filename_big}`)
+  const smallImage = require(`/public/assets/images/home/highlighted/${filename_small}`);
 
   return (
     <Link href={`/work/${link}`} className={styles.highlight_box}>
@@ -29,14 +28,13 @@ export default function Highlight({
             className={styles.highlight_small_image}
             alt={title}
           />
-          <h3 className={`${styles.subtitle} ${inter.className}`}>{subtitle}</h3>
+          <h3 className={`${styles.subtitle} ${inter.className}`}>
+            {subtitle}
+          </h3>
         </div>
       </div>
       <div
-        className={styles.second_part}
-        style={{
-          backgroundImage: `url(${bigImage.src})`,
-        }}
+        className={`${styles.second_part} ${short_name === 'tfg' ? styles.tfg : styles.happenin}`}
       >
         <span className={`${styles.selected} ${syne.className}`}>
           selected <span className={styles.selected_num}>{selected}/2</span>

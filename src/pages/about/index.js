@@ -7,8 +7,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Inter, Syne } from "next/font/google";
 import Image from "next/image";
-import profileImage from "/src/assets/images/about/profile_pic.png";
-import bgImage from "/src/assets/images/about/profile_bg.JPG";
+import profileImage from "/public/assets/images/about/profile_pic.png";
+import bgImage from "/public/assets/images/about/profile_bg.JPG";
 
 const syne = Syne({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });

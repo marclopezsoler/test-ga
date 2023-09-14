@@ -68,7 +68,7 @@
   width: auto;
   height: 250px;
   opacity: 0;
-  transition: 0.2s;
+  transition: 0.2s ease-out;
   pointer-events: none;
   overflow: hidden;
   z-index: 9999999;

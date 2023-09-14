@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "@/styles/components/ImageComponent.module.scss";
 import { useEffect, useState } from "react";
-import closeIcon from "@/assets/icons/close.svg";
+import closeIcon from "../../public/assets/icons/close.svg";
 import { isMobile } from "react-device-detect";
 import { Syne } from "next/font/google";
 
