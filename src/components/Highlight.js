@@ -14,13 +14,16 @@ export default function Highlight({
   link,
   selected,
 }) {
+  const smallImage = require(`/src/assets/images/home/highlighted/${filename_small}`)
+  const bigImage = require(`/src/assets/images/home/highlighted/${filename_big}`)
+
   return (
     <Link href={`/work/${link}`} className={styles.highlight_box}>
       <div className={styles.first_part}>
         <div className={styles.first_part_child}>
           <h2 className={`${styles.title} ${syne.className}`}>{title}</h2>
           <Image
-            src={`/assets/images/home/highlighted/${filename_small}`}
+            src={smallImage}
             width={350}
             height={350}
             className={styles.highlight_small_image}
@@ -32,7 +35,7 @@ export default function Highlight({
       <div
         className={styles.second_part}
         style={{
-          backgroundImage: `url('/assets/images/home/highlighted/${filename_big}')`,
+          backgroundImage: `url(${bigImage.src})`,
         }}
       >
         <span className={`${styles.selected} ${syne.className}`}>

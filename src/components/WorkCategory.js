@@ -27,8 +27,9 @@ function WorkCategory({ works, categoryType, hoveredItemId, setHoveredItemId, lo
                 {work.title}
               </p>
             </Link>
-            {/* <Image
-              src={`/assets/images/work/${work.id}/image1.jpg`}
+            <Image
+              // src={require(`/assets/images/work/${work.id}/image1.jpg`)}
+              src={""}
               width={600}
               height={600}
               className={styles.image}
@@ -37,7 +38,7 @@ function WorkCategory({ works, categoryType, hoveredItemId, setHoveredItemId, lo
                 top: `${localY - 250}px`,
               }}
               alt={work.title}
-            /> */}
+            />
           </button>
         ) : null
       )}
