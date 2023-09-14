@@ -34,7 +34,7 @@ export default function Contact() {
         <title>contact | marc lópez portfolio</title>
         <meta
           name="description"
-          content="portfolio website of marc lópez created using nextjs"
+          content="get in contact with me or send me a private message via any social account"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.ico" />

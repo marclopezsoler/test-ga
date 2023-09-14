@@ -53,7 +53,7 @@ export default function Work() {
         <title>work | marc lópez portfolio</title>
         <meta
           name="description"
-          content="portfolio website of marc lópez created using nextjs"
+          content="showcase of different works by marc lópez"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.ico" />

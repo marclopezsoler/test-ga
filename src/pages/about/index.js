@@ -84,7 +84,7 @@ export default function About() {
         <title>about | marc lópez portfolio</title>
         <meta
           name="description"
-          content="portfolio website of marc lópez created using nextjs"
+          content="get to know marc lópez's background and experience"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.ico" />

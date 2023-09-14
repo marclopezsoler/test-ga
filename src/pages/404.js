@@ -15,7 +15,7 @@ export default function Custom404() {
         <title>page not found</title>
         <meta
           name="description"
-          content="portfolio website of marc lópez created using nextjs"
+          content="portfolio website of marc lópez. Discover all his projects and experience here!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.ico" />
