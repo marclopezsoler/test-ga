@@ -1,11 +1,10 @@
 import Icon from "@/components/Icon";
 import Skills from "@/components/Skills";
+import styles from "@/styles/About.module.scss";
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import styles from "@/styles/About.module.scss";
 // import profilePic from "./assets/images/about/profile_pic.png";
 import { Inter, Syne } from "next/font/google";
 
@@ -52,7 +51,7 @@ export default function About() {
 
   useEffect(() => {
     const change = () => {
-      const element = document.getElementById('word');
+      const element = document.getElementById("word");
       if (element) {
         element.innerHTML = values[index];
         index = ++index % values.length;
@@ -165,12 +164,12 @@ export default function About() {
                   editor, gaining expertise in video editing and file
                   management.
                   <br></br>
-                  <br></br>currently, I&apos;m with Dfusió, a local communication
-                  agency, where I&apos;ve evolved into a multimedia developer. Here,
-                  I build websites from scratch, maintain them, design various
-                  promotional materials, manage social media accounts, and
-                  analyze website and social media traffic using various
-                  analytics tools.
+                  <br></br>currently, I&apos;m with Dfusió, a local
+                  communication agency, where I&apos;ve evolved into a
+                  multimedia developer. Here, I build websites from scratch,
+                  maintain them, design various promotional materials, manage
+                  social media accounts, and analyze website and social media
+                  traffic using various analytics tools.
                 </p>
               </div>
               <div className={styles.skills_parent}>
@@ -189,7 +188,9 @@ export default function About() {
               <div className={styles.tools}>
                 <h2 className={syne.className}>tools</h2>
                 <div className={styles.tools_child}>
-                  <h3 className={`${styles.h3} ${syne.className}`}>developing</h3>
+                  <h3 className={`${styles.h3} ${syne.className}`}>
+                    developing
+                  </h3>
                   <div className={styles.tools_icon}>
                     <Icon url={"javascript.png"} name="javascript" />
                     <Icon url={"sass.png"} name="sass" />
@@ -204,7 +205,9 @@ export default function About() {
                   </div>
                 </div>
                 <div className={styles.tools_child}>
-                  <h3 className={`${styles.h3} ${syne.className}`}>design & photography</h3>
+                  <h3 className={`${styles.h3} ${syne.className}`}>
+                    design & photography
+                  </h3>
                   <div className={styles.tools_icon}>
                     <Icon url={"figma.png"} name="figma" />
                     <Icon url={"illustrator.png"} name="illustrator" />
@@ -214,7 +217,9 @@ export default function About() {
                   </div>
                 </div>
                 <div className={styles.tools_child}>
-                  <h3 className={`${styles.h3} ${syne.className}`}>cms & plugins</h3>
+                  <h3 className={`${styles.h3} ${syne.className}`}>
+                    cms & plugins
+                  </h3>
                   <div className={styles.tools_icon}>
                     <Icon url={"drupal.png"} name="drupal" />
                     <Icon url={"wordpress.png"} name="wordpress" />
@@ -255,14 +260,14 @@ export default function About() {
                   <br></br>
                   <br></br>finally, generative art is a hobby I discovered
                   recenlty, and helps me connect coding and design on a really
-                  interesting way. I&apos;m sure you&apos;ll hear about me soon talking
-                  more and more about generative art!
+                  interesting way. I&apos;m sure you&apos;ll hear about me soon
+                  talking more and more about generative art!
                 </p>
               </div>
               <div className={`${styles.contact} ${syne.className}`}>
                 <p>
-                  do you want to know more about me?<br></br>then, let&apos;s get in
-                  touch
+                  do you want to know more about me?<br></br>then, let&apos;s
+                  get in touch
                 </p>
                 <Link href="/contact" className={styles.link}>
                   CONTACT ME
