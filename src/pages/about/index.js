@@ -126,7 +126,7 @@ export default function About() {
             <section
               className={styles.second_content}
               style={{
-                backgroundImage: 'url(/assets/images/about/profile_bg.JPG)',
+                backgroundImage: `url(${bgImage.src})`,
               }}
             >
               <p style={styleBg} className={syne.className}>
