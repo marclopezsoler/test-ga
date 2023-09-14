@@ -86,20 +86,20 @@ export default function WorkDetailPage() {
               </div>
               <div className={styles.details}>
                 <div className={work.roles ? "" : styles.hide}>
-                  <span id={styles.span} className={syne.className}>roles</span>
+                  <span id={`${styles.span} ${"1"}`} className={syne.className}>roles</span>
                   <p id={styles.p} className={inter.className}>{work.roles}</p>
                 </div>
                 <div className={work.date ? "" : styles.hide}>
-                  <span id={styles.span} className={syne.className}>date</span>
+                  <span id={`${styles.span} ${"2"}`} className={syne.className}>date</span>
                   <p id={styles.p} className={inter.className}>{work.date}</p>
                 </div>
                 <div className={work.client ? "" : styles.hide}>
-                  <span id={styles.span} className={syne.className}>client</span>
+                  <span id={`${styles.span} ${"3"}`} className={syne.className}>client</span>
                   <p id={styles.p} className={inter.className}>{work.client}</p>
                 </div>
                 <div>
                   <span
-                    id={styles.span}
+                    id={`${styles.span} ${"4"}`}
                     className={`${work.link === "" ? styles.hide : ""} ${syne.className}`}
                   >
                     link

@@ -50,14 +50,20 @@ export default function About() {
 
   let index = 0;
 
-  const change = () => {
-    document.getElementById("word").innerHTML = values[index];
-    index = ++index % values.length;
-    setTimeout(change, 2000);
-  };
-
   useEffect(() => {
-    change();
+    const change = () => {
+      const element = document.getElementById('word');
+      if (element) {
+        element.innerHTML = values[index];
+        index = ++index % values.length;
+      }
+    };
+
+    const intervalId = setInterval(change, 2000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
   }, []);
 
   useEffect(() => {
