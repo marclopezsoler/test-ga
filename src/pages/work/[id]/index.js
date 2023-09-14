@@ -117,34 +117,34 @@ export default function WorkDetailPage() {
             </div>
             <div className={styles.images_group}>
               <ImageComponent
-                workId={work.id}
+                workId={work.image2_alt}
                 image_alt={work.image2_alt}
                 numberImg={2}
               />
               <ImageComponent
-                workId={work.id}
+                workId={work.image3_alt}
                 image_alt={work.image3_alt}
                 numberImg={3}
               />
               <ImageComponent
-                workId={work.id}
+                workId={work.image4_alt}
                 image_alt={work.image4_alt}
                 numberImg={4}
               />
               <div className={styles.two_images}>
                 <ImageComponent
-                  workId={work.id}
+                  workId={work.image5_alt}
                   image_alt={work.image5_alt}
                   numberImg={5}
                 />
                 <ImageComponent
-                  workId={work.id}
+                  workId={work.image6_alt}
                   image_alt={work.image6_alt}
                   numberImg={6}
                 />
               </div>
               <ImageComponent
-                workId={work.id}
+                workId={work.image7_alt}
                 image_alt={work.image7_alt}
                 numberImg={7}
               />

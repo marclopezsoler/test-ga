@@ -33,6 +33,7 @@ function WorkCategory({
               href={`/work/${work.id}`}
               className={styles.link}
               id={work.id}
+              key={work.id}
             >
               <p className={`${styles.title} ${syne.className}`}>
                 <span>{work.type}</span>
