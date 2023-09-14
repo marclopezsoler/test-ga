@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import styles from "@/styles/components/ContactForm.module.scss";
 import emailjs from "@emailjs/browser";
 import { Inter, Syne } from "next/font/google";
@@ -44,39 +44,45 @@ export default function ContactForm() {
   return (
     <form ref={form} onSubmit={sendEmail} className={styles.main}>
       <div className={inter.className}>
-        <label>Name *</label>
-        <input
-          type="text"
-          name="user_name"
-          value={name}
-          className={styles.name}
-          placeholder="Enter your name"
-          required
-          onChange={(e) => setName(e.target.value)}
-        />
+        <label>
+          Name *
+          <input
+            type="text"
+            name="user_name"
+            value={name}
+            className={styles.name}
+            placeholder="Enter your name"
+            required
+            onChange={(e) => setName(e.target.value)}
+          />
+        </label>
       </div>
       <div className={inter.className}>
-        <label>Email *</label>
-        <input
-          type="email"
-          name="user_email"
-          value={email}
-          className={styles.email}
-          placeholder="Enter yout email address"
-          required
-          onChange={(e) => setEmail(e.target.value)}
-        />
+        <label>
+          Email *
+          <input
+            type="email"
+            name="user_email"
+            value={email}
+            className={styles.email}
+            placeholder="Enter yout email address"
+            required
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </label>
       </div>
       <div className={inter.className}>
-        <label>Message *</label>
-        <textarea
-          name="message"
-          value={message}
-          className={`${styles.message} ${inter.className}`}
-          placeholder="Say something..."
-          required
-          onChange={(e) => setMessage(e.target.value)}
-        />
+        <label>
+          Message *
+          <textarea
+            name="message"
+            value={message}
+            className={`${styles.message} ${inter.className}`}
+            placeholder="Say something..."
+            required
+            onChange={(e) => setMessage(e.target.value)}
+          />
+        </label>
       </div>
       <button className={styles.button_parent}>
         <input
