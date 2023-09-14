@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }) {
           gtag('config', 'G-CYPLVVSN8B');
         `}
       </Script>
-      <link rel="manifest" href="/manifest.webmanifest" />
+      <link rel="manifest" href="./manifest.webmanifest" />
 
       <Header />
       {isMobile ? <Popup /> : <Cursor />}
