@@ -7,26 +7,20 @@ import { Syne } from "next/font/google";
 
 const syne = Syne({ subsets: ["latin"] });
 
-export default function ImageComponent({ workId, image_alt, numberImg }) {
+export default function ImageComponent({ workId, image_alt, numberImg, img4Type }) {
   const [hideImg, setHideImg] = useState(true);
   const [noSrc, setNoSrc] = useState(true);
   const [showFullImage, setShowFullImage] = useState(false);
 
   const jpgImagePath = `/assets/images/work/${workId}/image${numberImg}.jpg`;
-  const gifImagePath = `/assets/images/work/${workId}/image${numberImg}.gif`;
+  const jpgImage4Path = `/assets/images/work/${workId}/image${numberImg}.${img4Type}`;
 
   let imageSrc = jpgImagePath;
 
-  if(numberImg === 4){
-    if(jpgImagePath && gifImagePath){
-      // imageSrc = jpgImagePath;
-      console.log(jpgImagePath);
-      console.log(gifImagePath);
-    } else if(gifImagePath){
-      imageSrc = gifImagePath;
-    } else{
-      imageSrc = jpgImagePath;
-    }
+  if(numberImg == 4){
+    imageSrc = jpgImage4Path;
+  } else{
+    imageSrc = jpgImagePath;
   }
 
   useEffect(() => {

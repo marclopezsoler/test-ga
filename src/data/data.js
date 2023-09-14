@@ -20,6 +20,7 @@ const works = [
     image5_alt: "tmdb responsive home page",
     image6_alt: "tmdb repsonsive movie detail page",
     image7_alt: "tmdb search results page",
+    img4Type: "gif",
   },
   {
     num: 2,
@@ -42,6 +43,7 @@ const works = [
     image5_alt: "stories game recap 1",
     image6_alt: "stories game recap 2",
     image7_alt: "player of the week design 2",
+    img4Type: "gif",
   },
   {
     num: 3,
@@ -64,6 +66,7 @@ const works = [
     image5_alt: "our mission",
     image6_alt: "find us",
     image7_alt: "",
+    img4Type: "gif",
   },
   {
     num: 4,
@@ -85,6 +88,7 @@ const works = [
     image5_alt: "",
     image6_alt: "",
     image7_alt: "",
+    img4Type: "gif",
   },
   {
     num: 5,
@@ -106,6 +110,7 @@ const works = [
     image5_alt: "still4",
     image6_alt: "still5",
     image7_alt: "still6",
+    img4Type: "gif",
   },
   {
     num: 6,
@@ -127,6 +132,7 @@ const works = [
     image5_alt: "",
     image6_alt: "",
     image7_alt: "",
+    img4Type: "gif",
   },
   {
     num: 7,
@@ -148,6 +154,7 @@ const works = [
     image5_alt: "",
     image6_alt: "",
     image7_alt: "",
+    img4Type: "gif",
   },
   {
     num: 8,
@@ -169,6 +176,7 @@ const works = [
     image5_alt: "bridge",
     image6_alt: "santo ildefonso",
     image7_alt: "bridge & river",
+    img4Type: "jpg",
   },
   {
     num: 9,
@@ -190,6 +198,7 @@ const works = [
     image5_alt: "",
     image6_alt: "",
     image7_alt: "",
+    img4Type: "gif",
   },
   {
     num: 10,
@@ -211,6 +220,7 @@ const works = [
     image5_alt: "",
     image6_alt: "",
     image7_alt: "",
+    img4Type: "gif",
   },
   {
     num: 11,
@@ -232,6 +242,7 @@ const works = [
     image5_alt: "",
     image6_alt: "",
     image7_alt: "",
+    img4Type: "gif",
   },
   {
     num: 12,
@@ -253,6 +264,7 @@ const works = [
     image5_alt: "",
     image6_alt: "",
     image7_alt: "",
+    img4Type: "gif",
   },
   {
     num: 13,
@@ -274,6 +286,7 @@ const works = [
     image5_alt: "",
     image6_alt: "",
     image7_alt: "",
+    img4Type: "jpg",
   },
   {
     num: 14,
@@ -295,6 +308,7 @@ const works = [
     image5_alt: "river cruise",
     image6_alt: "racoons",
     image7_alt: "city park",
+    img4Type: "jpg",
   },
   {
     num: 15,

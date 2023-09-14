@@ -260,8 +260,8 @@ export default function About() {
                   photohtaphy) and show me how to be better while working with
                   other people (basketball).
                   <br></br>
-                  <br></br>finally, generative art is a hobby I discovered
-                  recenlty, and helps me connect coding and design on a really
+                  <br></br>finally, generative art is a hobby I recenlty
+                  discovered, and helps me connect coding and design on a really
                   interesting way. I&apos;m sure you&apos;ll hear about me soon
                   talking more and more about generative art!
                 </p>
