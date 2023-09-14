@@ -114,6 +114,7 @@ export default function Work() {
               <section className={styles.tags_parent_mobile}>
                 <a href="#developing">dev</a>
                 <a href="#design">design</a>
+                <a href="#photo">photo</a>
                 <a href="#other">other</a>
               </section>
               <section
@@ -129,6 +130,11 @@ export default function Work() {
                 <WorkCategoryMobile
                   works={works}
                   categoryType="design"
+                  {...{ hoveredItemId, setHoveredItemId, localX, localY }}
+                />
+                <WorkCategoryMobile
+                  works={works}
+                  categoryType="photo"
                   {...{ hoveredItemId, setHoveredItemId, localX, localY }}
                 />
                 <WorkCategoryMobile

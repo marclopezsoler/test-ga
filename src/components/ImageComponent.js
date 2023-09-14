@@ -17,10 +17,16 @@ export default function ImageComponent({ workId, image_alt, numberImg }) {
 
   let imageSrc = jpgImagePath;
 
-  if (gifImagePath && numberImg === 4) {
-    imageSrc = gifImagePath;
-  } else {
-    imageSrc = jpgImagePath;
+  if(numberImg === 4){
+    if(jpgImagePath && gifImagePath){
+      // imageSrc = jpgImagePath;
+      console.log(jpgImagePath);
+      console.log(gifImagePath);
+    } else if(gifImagePath){
+      imageSrc = gifImagePath;
+    } else{
+      imageSrc = jpgImagePath;
+    }
   }
 
   useEffect(() => {
