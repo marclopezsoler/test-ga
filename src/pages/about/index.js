@@ -5,8 +5,10 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-// import profilePic from "./assets/images/about/profile_pic.png";
 import { Inter, Syne } from "next/font/google";
+import Image from "next/image";
+import profileImage from "/src/assets/images/about/profile_pic.png";
+import bgImage from "/src/assets/images/about/profile_bg.JPG";
 
 const syne = Syne({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
@@ -112,20 +114,20 @@ export default function About() {
                     full stack developer
                   </p>
                 </div>
-                {/* <Image
-                  src={""}
+                <Image
+                  src={profileImage}
                   width={300}
                   height={300}
-                  className={styles.image}
+                  className={`${styles.image} ${inter.className}`}
                   alt="profile image"
-                /> */}
+                />
               </section>
             </div>
             <section
               className={styles.second_content}
-              // style={{
-              //   backgroundImage: 'url("/assets/images/about/profile_bg.jpg")',
-              // }}
+              style={{
+                backgroundImage: 'url(/assets/images/about/profile_bg.JPG)',
+              }}
             >
               <p style={styleBg} className={syne.className}>
                 I use my passion and skills to create visually appealing
