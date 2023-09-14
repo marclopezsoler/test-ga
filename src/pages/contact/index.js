@@ -50,7 +50,7 @@ export default function Contact() {
           <div className={styles.contact_page}>
             <section
               className={`${styles.first_part} ${
-                contactLoads === 1 ? styles.animateLeft : ""
+                contactLoads === 1 ? "" : ""
               }`}
             >
               <h1 className={`${styles.title} ${syne.className}`}>
@@ -63,7 +63,7 @@ export default function Contact() {
             </section>
             <section
               className={`${styles.second_part} ${
-                contactLoads === 1 ? styles.animateRight : ""
+                contactLoads === 1 ? "" : ""
               }`}
             >
               <ContactForm />
