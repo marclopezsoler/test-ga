@@ -50,13 +50,13 @@ export default function WorkDetailPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.ico" />
       </Head>
-      <motion.div
+      {/* <motion.div
         className="container text-center  bg-black"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.35 }}
-      >
+      > */}
         <main className={styles.work_detail}>
           <section className={styles.landing_container}>
             <div
@@ -158,7 +158,7 @@ export default function WorkDetailPage() {
           </section>
           <NextWork nextWork={nextWorkNum} />
         </main>
-      </motion.div>
+      {/* </motion.div> */}
     </>
   );
 }

@@ -39,18 +39,18 @@ export default function Contact() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.ico" />
       </Head>
-      <motion.div
+      {/* <motion.div
         className="container text-center bg-black"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.35 }}
-      >
+      > */}
         <main className={styles.main}>
           <div className={styles.contact_page}>
             <section
               className={`${styles.first_part} ${
-                contactLoads === 1 ? styles.animateLeft : ""
+                contactLoads === 1 ? "" : ""
               }`}
             >
               <h1 className={`${styles.title} ${syne.className}`}>
@@ -63,14 +63,14 @@ export default function Contact() {
             </section>
             <section
               className={`${styles.second_part} ${
-                contactLoads === 1 ? styles.animateRight : ""
+                contactLoads === 1 ? "" : ""
               }`}
             >
               <ContactForm />
             </section>
           </div>
         </main>
-      </motion.div>
+      {/* </motion.div> */}
     </>
   );
 }
