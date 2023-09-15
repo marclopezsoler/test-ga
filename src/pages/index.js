@@ -39,19 +39,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.ico" />
       </Head>
-      <motion.div
+      {/* <motion.div
         className="container text-center  bg-black"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.35 }}
-      >
+      > */}
         <main className={`${styles.main} ${syne.className}`}>
           <section className={`${styles.home_section_1} ${syne.className}`}>
             <div className={styles.title_parent}>
               <h1
                 className={`${styles.home_title} ${
-                  homeLoads === 1 ? styles.animate_titleY : ""
+                  homeLoads === 1 ? ""  : ""
                 }`}
               >
                 creative
@@ -59,14 +59,14 @@ export default function Home() {
               <div className={styles.title_parent2}>
                 <h1
                   className={`${styles.home_title} ${
-                    homeLoads === 1 ? styles.animate_titleX2 : ""
+                    homeLoads === 1 ? "" : ""
                   }`}
                 >
                   digital{" "}
                 </h1>
                 <h1
                   className={`${styles.home_title} ${
-                    homeLoads === 1 ? styles.animate_titleX : ""
+                    homeLoads === 1 ? ""  : ""
                   }`}
                 >
                   artist
@@ -75,7 +75,7 @@ export default function Home() {
             </div>
             <h2
               className={`${styles.home_subtitle} ${
-                homeLoads === 1 ? styles.animate_subtitle : ""
+                homeLoads === 1 ? "" : ""
               }`}
             >
               marc lópez is a digital artist and developer from Barcelona, he&apos;s
@@ -123,7 +123,7 @@ export default function Home() {
             <p className={styles.section4_subtitle}>feel free to explore the other sections</p>
           </section>
         </main>
-      </motion.div>
+      {/* </motion.div> */}
     </>
   );
 }
