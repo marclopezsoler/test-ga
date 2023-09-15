@@ -90,17 +90,17 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.ico" />
       </Head>
-      {/* <motion.div
+      <motion.div
         className="container text-center  bg-black"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.35 }}
-      > */}
+      >
         <main className={styles.main}>
           <div
             className={`${styles.content} ${
-              count === 1 ? "" : ""
+              count === 1 ? styles.animate_page : ""
             }`}
           >
             <div className={styles.first_content_parent}>
@@ -198,6 +198,7 @@ export default function About() {
                     <Icon url={"sass.png"} name="sass" />
                     <Icon url={"php.svg"} name="php" />
                     <Icon url={"mysql.svg"} name="mysql" />
+                    <Icon url={"firebase.png"} name="firebase" />
                     <Icon url={"reactjs.png"} name="react.js" />
                     <Icon url={"nextjs.png"} name="next.js" />
                     <Icon url={"nodejs.png"} name="node.js" />
@@ -223,8 +224,8 @@ export default function About() {
                     cms & plugins
                   </h3>
                   <div className={styles.tools_icon}>
-                    <Icon url={"drupal.png"} name="drupal" />
                     <Icon url={"wordpress.png"} name="wordpress" />
+                    <Icon url={"drupal.png"} name="drupal" />
                     <Icon url={"divi.png"} name="divi" />
                     <Icon url={"elementor.png"} name="elementor" />
                     <Icon url={"salient.png"} name="salient" />
@@ -278,7 +279,7 @@ export default function About() {
             </section>
           </div>
         </main>
-      {/* </motion.div> */}
+      </motion.div>
     </>
   );
 }
