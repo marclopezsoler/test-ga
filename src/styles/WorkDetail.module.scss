@@ -249,13 +249,22 @@
       gap: 2em;
 
       .details {
-        grid-template-columns: 3fr 2fr 2fr 2fr;
+        grid-template-columns: repeat(4, 2fr);
+        column-gap: 5px;
 
         div {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           justify-content: center;
+        }
+
+        p {
+          font-size: $mobile_p;
+        }
+
+        span {
+          font-size: $mobile_span;
         }
       }
     }
@@ -271,6 +280,8 @@
 
       .details {
         grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
       }
     }
   }
