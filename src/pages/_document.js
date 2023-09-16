@@ -10,7 +10,7 @@ export default function Document() {
           name="description"
           content="portfolio website of marc lópez. Discover all his projects and experience here!"
         />
-        <link rel="icon" href="../public/icon.ico" />
+        <link rel="icon" href="/icon.ico" />
         <meta name="theme-color" content="#020b55" />
       </Head>
       <body>
