@@ -37,7 +37,7 @@ export default function Contact() {
           content="get in contact with me or send me a private message via any social account"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/icon.ico" />
+        <link rel="icon" href="../public/icon.ico" />
       </Head>
       <motion.div
         className="container text-center bg-black"

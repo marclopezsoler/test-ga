@@ -37,7 +37,7 @@ export default function Home() {
           content="portfolio website of marc lópez. Discover all his projects and experience here!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/icon.ico" />
+        <link rel="icon" href="../public/icon.ico" />
       </Head>
       <motion.div
         className="container text-center  bg-black"
