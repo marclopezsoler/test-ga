@@ -17,14 +17,14 @@ export default function Document() {
               j.async=true;
               j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
               f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','G-CYPLVVSN8B');
+            })(window,document,'script','dataLayer','GTM-PQQTJPLN');
           `
         }} />
       </Head>
       <body>
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=G-CYPLVVSN8B"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PQQTJPLN"
             height="0"
             width="0"
             style="display:none;visibility:hidden"
