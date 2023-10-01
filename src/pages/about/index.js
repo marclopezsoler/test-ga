@@ -196,6 +196,7 @@ export default function About() {
                   <div className={styles.tools_icon}>
                     <Icon url={"javascript.png"} name="javascript" />
                     <Icon url={"sass.png"} name="sass" />
+                    <Icon url={"tailwind.jpg"} name="tailwind" />
                     <Icon url={"php.svg"} name="php" />
                     <Icon url={"mysql.svg"} name="mysql" />
                     <Icon url={"firebase.png"} name="firebase" />
