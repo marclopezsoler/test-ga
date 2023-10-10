@@ -27,6 +27,7 @@ export default function Highlight({
             height={350}
             className={styles.highlight_small_image}
             alt={title}
+            loading="lazy"
           />
           <h3 className={`${styles.subtitle} ${inter.className}`}>
             {subtitle}

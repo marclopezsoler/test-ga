@@ -16,6 +16,7 @@ export default function Icon({ url, name }) {
       height={300}
       className={styles.icon}
       alt={name}
+      loading="lazy"
     />
     </div>
   );

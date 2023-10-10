@@ -70,6 +70,7 @@ export default function ImageComponent({ workId, image_alt, numberImg, img4Type 
               height={800}
               className={styles.full_image}
               alt={image_alt}
+              loading="lazy"
             />
           </>
         )}
@@ -84,6 +85,7 @@ export default function ImageComponent({ workId, image_alt, numberImg, img4Type 
         }`}
         alt={image_alt}
         onClick={toggleFullImage}
+        loading="lazy"
       />
     </div>
   );
