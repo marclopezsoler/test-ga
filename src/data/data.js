@@ -353,6 +353,28 @@ const works = [
     image6_alt: "label mockup",
     image7_alt: "",
     img4Type: "jpg",
+  },
+  {
+    num: 17,
+    id: "work17",
+    title: "converters",
+    subtitle1: "creating various converters using javascript",
+    category: "developing",
+    type: "developing",
+    description: "that website contains different converters that can be useful in some moments of your life. I developed the projects using React while focusing on UI, using different npm libraries",
+    roles: "javascript, ui",
+    date: "2023",
+    client: "uni",
+    short_link: "converters site",
+    link: "https://converters.marclopez.xyz/",
+    image1_alt: "",
+    image2_alt: "",
+    image3_alt: "",
+    image4_alt: "",
+    image5_alt: "",
+    image6_alt: "",
+    image7_alt: "",
+    img4Type: "jpg",
   }
 ];
 
