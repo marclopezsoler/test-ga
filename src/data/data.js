@@ -93,8 +93,8 @@ const works = [
   {
     num: 5,
     id: "work5",
-    title: "generative splatter paintings",
-    subtitle1: "digital representation of Pollock's Splatter Paintings",
+    title: "generative splatter painting",
+    subtitle1: "digital representation of Pollock's Splatter Painting",
     category: "developing",
     type: "generative art",
     description: "as a final degree project I developed an interactive exhibition where people could interact with an interface and create a Pollock Splatter Painting with complete freedom.",
