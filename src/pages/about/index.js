@@ -162,10 +162,10 @@ export default function About() {
                   videomapping, played around with mapping software, and now, my
                   big thing is creating immersive experiences and interactive
                   exhibitions using generative art.<br></br><br></br>I'm currently in an advanced
-                  phase of{" "}
-                  <Link href={`/work/work5`} className={styles.linkword}>
+                  phase of
+                  {/* <Link href={`/work/work5`} className={styles.linkword}>
                     Generative Splatter Painting
-                  </Link>
+                  </Link> */}
                   .<br></br>
                   <br></br>
                 </p>
