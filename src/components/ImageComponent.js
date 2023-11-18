@@ -15,14 +15,12 @@ export default function ImageComponent({ workId, image_alt, numberImg, img4Type 
   const jpgImagePath = `/assets/images/work/${workId}/image${numberImg}.jpg`;
   const jpgImage4Path = `/assets/images/work/${workId}/image${numberImg}.${img4Type}`;
 
-  const lowercaseExtension = jpgImagePath.slice(jpgImagePath.lastIndexOf('.')).toLowerCase();
-
-  let imageSrc = lowercaseExtension;
+  let imageSrc = jpgImagePath;
 
   if(numberImg == 4){
     imageSrc = jpgImage4Path;
   } else{
-    imageSrc = lowercaseExtension;
+    imageSrc = jpgImagePath;
   }
 
   useEffect(() => {
