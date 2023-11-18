@@ -146,23 +146,25 @@ export default function About() {
                     <i>professional journey and current role</i>
                   </h3>
                   my journey began managing daily brand designs and social media
-                  content for The Sideline football account.<br></br><br></br>Later, I
-                  interned as a video editor, gaining expertise in video editing
-                  and file management.<br></br><br></br>Now, I've evolved into a
-                  multimedia developer, building websites from scratch,
-                  designing promotional materials, managing social media, and
-                  analyzing web and social traffic.
+                  content for The Sideline football account.<br></br>
+                  <br></br>Later, I interned as a video editor, gaining
+                  expertise in video editing and file management.<br></br>
+                  <br></br>Now, I&apos;ve evolved into a multimedia developer,
+                  building websites from scratch, designing promotional
+                  materials, managing social media, and analyzing web and social
+                  traffic.
                   <br></br>
                   <br></br>
                   <h3>
                     <i>immersive experiences</i>
                   </h3>
-                  lately, I've been into generative art, blending code and
-                  design in cool ways.<br></br><br></br>I've led projects like immersive
-                  videomapping, played around with mapping software, and now, my
-                  big thing is creating immersive experiences and interactive
-                  exhibitions using generative art.<br></br><br></br>I'm currently in an advanced
-                  phase of{" "}
+                  lately, I&apos;ve been into generative art, blending code and
+                  design in cool ways.<br></br>
+                  <br></br>I&apos;ve led projects like immersive videomapping,
+                  played around with mapping software, and now, my big thing is
+                  creating immersive experiences and interactive exhibitions
+                  using generative art.<br></br>
+                  <br></br>I&apos;m currently in an advanced phase of{" "}
                   <Link href={`/work/work5`} className={styles.linkword}>
                     Generative Splatter Painting
                   </Link>
