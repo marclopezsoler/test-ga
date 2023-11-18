@@ -70,6 +70,7 @@ export default function Work() {
             <section className={styles.work_content}>
               <section className={styles.tags_parent}>
                 <div className={styles.work_tags}>
+                  <a href="#art">art</a>
                   <a href="#developing">dev</a>
                   <a href="#design">design</a>
                   <a href="#photo">photo</a>
@@ -86,6 +87,11 @@ export default function Work() {
                     workLoads === 1 ? styles.animate_content : ""
                   }`}
                 >
+                  <WorkCategory
+                    works={works}
+                    categoryType="art"
+                    {...{ hoveredItemId, setHoveredItemId, localX, localY }}
+                  />
                   <WorkCategory
                     works={works}
                     categoryType="developing"
@@ -112,6 +118,7 @@ export default function Work() {
           ) : (
             <section className={styles.work_content_mobile}>
               <section className={styles.tags_parent_mobile}>
+                <a href="#art">art</a>
                 <a href="#developing">dev</a>
                 <a href="#design">design</a>
                 <a href="#photo">photo</a>
@@ -122,6 +129,11 @@ export default function Work() {
                   workLoads === 1 ? styles.animate_content : ""
                 }`}
               >
+                <WorkCategoryMobile
+                  works={works}
+                  categoryType="art"
+                  {...{ hoveredItemId, setHoveredItemId, localX, localY }}
+                />
                 <WorkCategoryMobile
                   works={works}
                   categoryType="developing"
