@@ -140,7 +140,7 @@ export default function About() {
                 <h2 className={syne.className}>who am I?</h2>
                 <p className={inter.className}>
                   a multimedia bachelor graduate with a strong passion for
-                  combining <i>coding</i> and <i>design</i>.<br></br>
+                  combining <i>coding</i> and <i>design</i>.
                   <br></br>
                   <br></br>
                   <h3>
