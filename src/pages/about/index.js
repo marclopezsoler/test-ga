@@ -136,7 +136,7 @@ export default function About() {
               </p>
             </section>
             <section className={styles.third_section}>
-              {/* <div className={styles.about}>
+              <div className={styles.about}>
                 <h2 className={syne.className}>who am I?</h2>
                 <p className={inter.className}>
                   a multimedia bachelor graduate with a strong passion for
@@ -169,7 +169,7 @@ export default function About() {
                   .<br></br>
                   <br></br>
                 </p>
-              </div> */}
+              </div>
               <div className={styles.skills_parent}>
                 <h2 className={syne.className}>skills</h2>
                 <div className={styles.skills}>
@@ -185,7 +185,7 @@ export default function About() {
               </div>
               <div className={styles.tools}>
                 <h2 className={syne.className}>tools</h2>
-                {/* <div className={styles.tools_child}>
+                <div className={styles.tools_child}>
                   <h3 className={`${styles.h3} ${syne.className}`}>
                     digital arts
                   </h3>
@@ -195,7 +195,7 @@ export default function About() {
                     <Icon url={"resolume.jpg"} name="resolume" />
                     <Icon url={"mad.jpg"} name="mad mapper" />
                   </div>
-                </div> */}
+                </div>
                 <div className={styles.tools_child}>
                   <h3 className={`${styles.h3} ${syne.className}`}>
                     developing
