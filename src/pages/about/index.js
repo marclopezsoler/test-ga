@@ -132,8 +132,7 @@ export default function About() {
               <p style={styleBg} className={syne.className}>
                 I use my passion and skills to create visually appealing
                 products and experiences.<br></br>
-                <br></br>national customers rely on my experience to design and
-                manage their digital products.
+                <br></br>been working in the creative industry for the past two
               </p>
             </section>
             <section className={styles.third_section}>
@@ -142,12 +141,6 @@ export default function About() {
                 <p className={inter.className}>
                   a multimedia bachelor graduate with a strong passion for
                   combining <i>coding</i> and <i>design</i>.<br></br>
-                  <br></br>
-                  <b id={styles.time}>after graduating</b>, I continued to
-                  enhance my front and back-end skills. I delved into frameworks
-                  like Next.js, improved my proficiency in PHP and databases,
-                  and became well-versed in website hosting, deployment, and
-                  maintenance.
                   <br></br>
                   <br></br>
                   <h3>
