@@ -143,14 +143,6 @@ export default function About() {
                   a multimedia bachelor graduate with a strong passion for
                   combining <i>coding</i> and <i>design</i>.<br></br>
                   <br></br>
-                  <b id={styles.time}>during my college years</b>, I honed my
-                  graphic design skills, creating captivating visuals and
-                  posters using Illustrator and Photoshop. I also freelanced on
-                  platforms like Fiverr. Additionally, I mastered website
-                  development with React and React Native, building numerous
-                  single-page applications.
-                  <br></br>
-                  <br></br>
                   <b id={styles.time}>after graduating</b>, I continued to
                   enhance my front and back-end skills. I delved into frameworks
                   like Next.js, improved my proficiency in PHP and databases,
@@ -158,13 +150,17 @@ export default function About() {
                   maintenance.
                   <br></br>
                   <br></br>
-                  <b id={styles.time}>my professional journey</b> began as a
-                  graphic designer and community manager for The Sideline
-                  football account, responsible for daily brand designs and
-                  social media content management.<br></br>
-                  <br></br>a year later, I embarked on an internship as a video
-                  editor, gaining expertise in video editing and file
-                  management.
+                  <h3>
+                    <i>professional journey and current role</i>
+                  </h3>
+                  my journey began managing daily brand designs and social media
+                  content for The Sideline football account.<br></br>
+                  <br></br>Later, I interned as a video editor, gaining
+                  expertise in video editing and file management.<br></br>
+                  <br></br>Now, I&apos;ve evolved into a multimedia developer,
+                  building websites from scratch, designing promotional
+                  materials, managing social media, and analyzing web and social
+                  traffic.
                   <br></br>
                   <br></br>
                   <h3>
