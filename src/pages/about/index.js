@@ -191,6 +191,17 @@ export default function About() {
                 <h2 className={syne.className}>tools</h2>
                 <div className={styles.tools_child}>
                   <h3 className={`${styles.h3} ${syne.className}`}>
+                    digital arts
+                  </h3>
+                  <div className={styles.tools_icon}>
+                    <Icon url={"processing.png"} name="processing" />
+                    <Icon url={"p5js.png"} name="p5.js" />
+                    <Icon url={"resolume.jpg"} name="resolume" />
+                    <Icon url={"mad.jpg"} name="mad mapper" />
+                  </div>
+                </div>
+                <div className={styles.tools_child}>
+                  <h3 className={`${styles.h3} ${syne.className}`}>
                     developing
                   </h3>
                   <div className={styles.tools_icon}>
@@ -199,13 +210,9 @@ export default function About() {
                     <Icon url={"tailwind.jpg"} name="tailwind" />
                     <Icon url={"php.svg"} name="php" />
                     <Icon url={"mysql.svg"} name="mysql" />
-                    <Icon url={"firebase.png"} name="firebase" />
-                    <Icon url={"reactjs.png"} name="react.js" />
                     <Icon url={"nextjs.png"} name="next.js" />
                     <Icon url={"nodejs.png"} name="node.js" />
-                    <Icon url={"npm.png"} name="npm" />
                     <Icon url={"git.png"} name="git" />
-                    <Icon url={"processing.png"} name="processing" />
                   </div>
                 </div>
                 <div className={styles.tools_child}>
@@ -223,10 +230,10 @@ export default function About() {
                 <div className={styles.tools_child}>
                   <h3 className={`${styles.h3} ${syne.className}`}>others</h3>
                   <div className={styles.tools_icon}>
-                    <Icon url={"processing.png"} name="processing" />
                     <Icon url={"mailchimp.jpg"} name="mailchimp" />
                     <Icon url={"analytics.png"} name="analytics" />
                     <Icon url={"mybusiness.jpg"} name="my business" />
+                    <Icon url={"firebase.png"} name="firebase" />
                   </div>
                 </div>
               </div>
