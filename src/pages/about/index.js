@@ -43,9 +43,8 @@ export default function About() {
 
   const values = [
     "and I'm a full stack developer",
-    "and I'm a generative artist",
-    "and I'm a community manager",
     "and I'm a graphic designer",
+    "and I'm a generative artist",
     "and I'm a content creator",
   ];
 
@@ -111,7 +110,7 @@ export default function About() {
                     <b className={styles.bold}>marc lópez</b>
                   </h1>
                   <p className={`${styles.tag} ${inter.className}`} id="word">
-                    full stack developer
+                    and I'm a digital artist
                   </p>
                 </div>
                 <Image
@@ -132,8 +131,8 @@ export default function About() {
               <p style={styleBg} className={syne.className}>
                 I use my passion and skills to create visually appealing
                 products and experiences.<br></br>
-                <br></br>national customers rely on my experience to design and
-                manage their digital products.
+                <br></br>been working in the creative industry for the past two
+                years.
               </p>
             </section>
             <section className={styles.third_section}>
@@ -143,35 +142,32 @@ export default function About() {
                   a multimedia bachelor graduate with a strong passion for
                   combining <i>coding</i> and <i>design</i>.<br></br>
                   <br></br>
-                  <b id={styles.time}>during my college years</b>, I honed my
-                  graphic design skills, creating captivating visuals and
-                  posters using Illustrator and Photoshop. I also freelanced on
-                  platforms like Fiverr. Additionally, I mastered website
-                  development with React and React Native, building numerous
-                  single-page applications.
+                  <h3>
+                    <i>professional journey and current role</i>
+                  </h3>
+                  my journey began managing daily brand designs and social media
+                  content for The Sideline football account.<br></br><br></br>Later, I
+                  interned as a video editor, gaining expertise in video editing
+                  and file management.<br></br><br></br>Now, I've evolved into a
+                  multimedia developer, building websites from scratch,
+                  designing promotional materials, managing social media, and
+                  analyzing web and social traffic.
                   <br></br>
                   <br></br>
-                  <b id={styles.time}>after graduating</b>, I continued to
-                  enhance my front and back-end skills. I delved into frameworks
-                  like Next.js, improved my proficiency in PHP and databases,
-                  and became well-versed in website hosting, deployment, and
-                  maintenance.
+                  <h3>
+                    <i>immersive experiences</i>
+                  </h3>
+                  lately, I've been into generative art, blending code and
+                  design in cool ways.<br></br><br></br>I've led projects like immersive
+                  videomapping, played around with mapping software, and now, my
+                  big thing is creating immersive experiences and interactive
+                  exhibitions using generative art.<br></br><br></br>I'm currently in an advanced
+                  phase of{" "}
+                  <Link href={`/work/work5`} className={styles.linkword}>
+                    Generative Splatter Painting
+                  </Link>
+                  .<br></br>
                   <br></br>
-                  <br></br>
-                  <b id={styles.time}>my professional journey</b> began as a
-                  graphic designer and community manager for The Sideline
-                  football account, responsible for daily brand designs and
-                  social media content management.<br></br>
-                  <br></br>a year later, I embarked on an internship as a video
-                  editor, gaining expertise in video editing and file
-                  management.
-                  <br></br>
-                  <br></br>currently, I&apos;m with Dfusió, a local
-                  communication agency, where I&apos;ve evolved into a
-                  multimedia developer. Here, I build websites from scratch,
-                  maintain them, design various promotional materials, manage
-                  social media accounts, and analyze website and social media
-                  traffic using various analytics tools.
                 </p>
               </div>
               <div className={styles.skills_parent}>
@@ -191,6 +187,17 @@ export default function About() {
                 <h2 className={syne.className}>tools</h2>
                 <div className={styles.tools_child}>
                   <h3 className={`${styles.h3} ${syne.className}`}>
+                    digital arts
+                  </h3>
+                  <div className={styles.tools_icon}>
+                    <Icon url={"processing.png"} name="processing" />
+                    <Icon url={"p5js.png"} name="p5.js" />
+                    <Icon url={"resolume.jpg"} name="resolume" />
+                    <Icon url={"mad.jpg"} name="mad mapper" />
+                  </div>
+                </div>
+                <div className={styles.tools_child}>
+                  <h3 className={`${styles.h3} ${syne.className}`}>
                     developing
                   </h3>
                   <div className={styles.tools_icon}>
@@ -199,13 +206,11 @@ export default function About() {
                     <Icon url={"tailwind.jpg"} name="tailwind" />
                     <Icon url={"php.svg"} name="php" />
                     <Icon url={"mysql.svg"} name="mysql" />
-                    <Icon url={"firebase.png"} name="firebase" />
-                    <Icon url={"reactjs.png"} name="react.js" />
+                    {/* <Icon url={"reactjs.png"} name="react.js" /> */}
                     <Icon url={"nextjs.png"} name="next.js" />
                     <Icon url={"nodejs.png"} name="node.js" />
-                    <Icon url={"npm.png"} name="npm" />
+                    {/* <Icon url={"npm.png"} name="npm" /> */}
                     <Icon url={"git.png"} name="git" />
-                    <Icon url={"processing.png"} name="processing" />
                   </div>
                 </div>
                 <div className={styles.tools_child}>
@@ -221,29 +226,16 @@ export default function About() {
                   </div>
                 </div>
                 <div className={styles.tools_child}>
-                  <h3 className={`${styles.h3} ${syne.className}`}>
-                    cms & plugins
-                  </h3>
-                  <div className={styles.tools_icon}>
-                    <Icon url={"wordpress.png"} name="wordpress" />
-                    <Icon url={"drupal.png"} name="drupal" />
-                    <Icon url={"divi.png"} name="divi" />
-                    <Icon url={"elementor.png"} name="elementor" />
-                    <Icon url={"salient.png"} name="salient" />
-                    <Icon url={"yoast.png"} name="yoast seo" />
-                  </div>
-                </div>
-                <div className={styles.tools_child}>
                   <h3 className={`${styles.h3} ${syne.className}`}>others</h3>
                   <div className={styles.tools_icon}>
-                    <Icon url={"processing.png"} name="processing" />
                     <Icon url={"mailchimp.jpg"} name="mailchimp" />
                     <Icon url={"analytics.png"} name="analytics" />
                     <Icon url={"mybusiness.jpg"} name="my business" />
+                    <Icon url={"firebase.png"} name="firebase" />
                   </div>
                 </div>
               </div>
-              <div className={styles.hobbies}>
+              {/* <div className={styles.hobbies}>
                 <h2 className={syne.className}>hobbies</h2>
                 <p className={inter.className}>
                   apart from designing and developing, there are three things I
@@ -267,7 +259,7 @@ export default function About() {
                   interesting way. I&apos;m sure you&apos;ll hear about me soon
                   talking more and more about generative art!
                 </p>
-              </div>
+              </div> */}
               <div className={`${styles.contact} ${syne.className}`}>
                 <p>
                   do you want to know more about me?<br></br>then, let&apos;s

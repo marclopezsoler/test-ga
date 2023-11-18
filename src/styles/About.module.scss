@@ -294,6 +294,11 @@
   }
 }
 
+.linkword{
+  color: $green;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 750px) {
   .content {
     width: 100%;
