@@ -162,10 +162,10 @@ export default function About() {
                   videomapping, played around with mapping software, and now, my
                   big thing is creating immersive experiences and interactive
                   exhibitions using generative art.<br></br><br></br>I'm currently in an advanced
-                  phase of
-                  {/* <Link href={`/work/work5`} className={styles.linkword}>
+                  phase of{" "}
+                  <Link href={`/work/work5`} className={styles.linkword}>
                     Generative Splatter Painting
-                  </Link> */}
+                  </Link>
                   .<br></br>
                   <br></br>
                 </p>
@@ -206,10 +206,8 @@ export default function About() {
                     <Icon url={"tailwind.jpg"} name="tailwind" />
                     <Icon url={"php.svg"} name="php" />
                     <Icon url={"mysql.svg"} name="mysql" />
-                    {/* <Icon url={"reactjs.png"} name="react.js" /> */}
                     <Icon url={"nextjs.png"} name="next.js" />
                     <Icon url={"nodejs.png"} name="node.js" />
-                    {/* <Icon url={"npm.png"} name="npm" /> */}
                     <Icon url={"git.png"} name="git" />
                   </div>
                 </div>
@@ -235,31 +233,6 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              {/* <div className={styles.hobbies}>
-                <h2 className={syne.className}>hobbies</h2>
-                <p className={inter.className}>
-                  apart from designing and developing, there are three things I
-                  truly love doing in my spare time<br></br>
-                  <br></br>
-                  <b>photography</b>,<br></br>
-                  <br></br>
-                  <b>basketball</b>
-                  <br></br>
-                  <br></br>and...<br></br>
-                  <br></br>
-                  <b>generative art</b>
-                  <br></br>
-                  <br></br>the first two hobbies help me disconnect from the
-                  daily routine, and also help me improve my creative skills (in
-                  photohtaphy) and show me how to be better while working with
-                  other people (basketball).
-                  <br></br>
-                  <br></br>finally, generative art is a hobby I recenlty
-                  discovered, and helps me connect coding and design on a really
-                  interesting way. I&apos;m sure you&apos;ll hear about me soon
-                  talking more and more about generative art!
-                </p>
-              </div> */}
               <div className={`${styles.contact} ${syne.className}`}>
                 <p>
                   do you want to know more about me?<br></br>then, let&apos;s
