@@ -221,19 +221,6 @@ export default function About() {
                   </div>
                 </div>
                 <div className={styles.tools_child}>
-                  <h3 className={`${styles.h3} ${syne.className}`}>
-                    cms & plugins
-                  </h3>
-                  <div className={styles.tools_icon}>
-                    <Icon url={"wordpress.png"} name="wordpress" />
-                    <Icon url={"drupal.png"} name="drupal" />
-                    <Icon url={"divi.png"} name="divi" />
-                    <Icon url={"elementor.png"} name="elementor" />
-                    <Icon url={"salient.png"} name="salient" />
-                    <Icon url={"yoast.png"} name="yoast seo" />
-                  </div>
-                </div>
-                <div className={styles.tools_child}>
                   <h3 className={`${styles.h3} ${syne.className}`}>others</h3>
                   <div className={styles.tools_icon}>
                     <Icon url={"processing.png"} name="processing" />
