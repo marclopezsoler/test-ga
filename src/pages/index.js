@@ -86,12 +86,12 @@ export default function Home() {
             <h2 className={`${styles.subtitle_part2} ${syne.className}`}>what I do best</h2>
             <p className={`${styles.p} ${inter.className}`}>These are some aspects I excel at, for further detail, go to the about section!</p>
             <div className={styles.best_parent}>
+              <MyBest title={"Generative art & Immersive experiences"} />
               <MyBest title={"Front End Developing"} />
               <MyBest title={"Responsive Web & Apps"} />
               <MyBest title={"Graphic Design"} />
               <MyBest title={"Photography"} />
               <MyBest title={"SEO, Google Analytics and MyBusiness"} />
-              <MyBest title={"Social Media managing"} />
             </div>
           </section>
           <section className={styles.home_section_3}>

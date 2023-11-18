@@ -166,12 +166,18 @@ export default function About() {
                   editor, gaining expertise in video editing and file
                   management.
                   <br></br>
-                  <br></br>currently, I&apos;m with Dfusió, a local
-                  communication agency, where I&apos;ve evolved into a
-                  multimedia developer. Here, I build websites from scratch,
-                  maintain them, design various promotional materials, manage
-                  social media accounts, and analyze website and social media
-                  traffic using various analytics tools.
+                  <br></br>
+                  <h3>
+                    <i>immersive experiences</i>
+                  </h3>
+                  I&apos;ve led projects like immersive videomapping, played
+                  around with mapping software, and now, my big thing is
+                  creating immersive experiences and interactive exhibitions
+                  using generative art. I&apos;m currently in an advanced phase
+                  of{" "}
+                  <Link href={`/work/work5`} className={styles.linkword}>
+                    Generative Splatter Painting
+                  </Link>
                 </p>
               </div>
               <div className={styles.skills_parent}>
