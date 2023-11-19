@@ -23,8 +23,8 @@ export default function App({ Component, pageProps }) {
       </Script>
 
       <Header />
-      {isMobile ? <Popup /> : <Cursor />}
       <Component {...pageProps} />
+      {isMobile ? <Popup /> : <Cursor />}
       <Footer />
     </>
   );
