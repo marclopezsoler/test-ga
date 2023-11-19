@@ -238,7 +238,7 @@
 
   .landing_text {
     h1 {
-      font-size: $mobile_h2;
+      font-size: calc(4vw + 14px);
     }
   }
 
@@ -259,7 +259,7 @@
           justify-content: center;
         }
 
-        p {
+        p, .link {
           font-size: $mobile_p;
         }
 

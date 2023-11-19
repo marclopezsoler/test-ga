@@ -221,6 +221,8 @@
   pointer-events: auto;
   padding: 15rem 0 5% 0;
 
+  margin-bottom: 6vh;
+  
   :nth-last-child(1) {
     border: 0;
   }
@@ -235,8 +237,8 @@
   border-bottom: 1.5px solid $green;
 
   padding-top: calc(9em + 1vw);
-  padding-bottom: 4rem;
-  margin-bottom: 2rem;
+  padding-bottom: 6rem;
+  margin-bottom: 4rem;
   margin-top: -8rem;
 
   .category_type {
@@ -246,6 +248,8 @@
     padding: 0;
     padding-right: 0.375em;
     color: $green;
+    
+    margin-top: 8vh;
   }
 }
 

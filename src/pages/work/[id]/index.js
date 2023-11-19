@@ -108,7 +108,7 @@ export default function WorkDetailPage() {
                     href={work.link}
                     id={`${styles.p} ${"4"}`}
                     target="_blank"
-                    className={`${work.link === "" ? styles.hide : ""} ${inter.className}`}
+                    className={`${work.link === "" ? styles.hide : ""} ${inter.className} ${styles.link}`}
                   >
                     {work.short_link}
                   </a>
