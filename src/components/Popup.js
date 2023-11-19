@@ -1,8 +1,7 @@
 "use client";
 import styles from "@/styles/components/Popup.module.scss";
-import { useEffect, useState } from "react";
-import { isMobile } from "react-device-detect";
 import { Inter } from "next/font/google";
+import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +22,7 @@ export default function Popup() {
 
   return (
     <div className={`${styles.main} ${inter.className}`}>
-      <div className={`${styles.popup} ${popup === 1 ? styles.animate : ""}`}>
+      <div className={`${styles.popup} ${popup != 1 ? styles.animate : ""}`}>
         <p>
           For a better experience, use a desktop or laptop to explore this site.
         </p>
