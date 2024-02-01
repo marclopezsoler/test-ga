@@ -104,7 +104,7 @@ export default function Home() {
                   filename_small={`pollock.png`}
                   short_name={`tfg`}
                   subtitle={`interactive exhibition`}
-                  link={`work17`}
+                  link={`work5`}
                   selected={1}
                 />
                 <Highlight
