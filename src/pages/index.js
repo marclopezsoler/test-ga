@@ -100,11 +100,11 @@ export default function Home() {
               <p className={`${styles.p} ${inter.cl}`}>Check out a few highlighted projects, if you want to explore more of them, go to the work section!</p>
               <div className={styles.highlight_parent}>
                 <Highlight
-                  title={`generative splatter paintings`}
+                  title={`neuragest`}
                   filename_small={`pollock.png`}
                   short_name={`tfg`}
-                  subtitle={`final degree project`}
-                  link={`work5`}
+                  subtitle={`interactive exhibition`}
+                  link={`work17`}
                   selected={1}
                 />
                 <Highlight
