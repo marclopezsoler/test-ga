@@ -36,6 +36,7 @@ export default function Home() {
           name="description"
           content="portfolio website of marc lópez. Discover all his projects and experience here!"
         />
+        <meta name="keywords" content="marc lópez soler, portfolio, full stack, digital artist, barcelona" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.ico" />
       </Head>
