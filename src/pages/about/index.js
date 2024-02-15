@@ -119,7 +119,8 @@ export default function About() {
                   width={300}
                   height={300}
                   className={`${styles.image} ${inter.className}`}
-                  alt="profile image"
+                  alt="profile image marc lópez"
+                  title="profile image marc lópez"
                 />
               </section>
             </div>
@@ -164,8 +165,8 @@ export default function About() {
                   creating immersive experiences and interactive exhibitions
                   using generative art. I&apos;m currently in an advanced phase
                   of{" "}
-                  <Link href={`/work/work5`} className={styles.linkword}>
-                    Generative Splatter Painting
+                  <Link href={`/work/work5`} className={styles.linkword} title="neuragest">
+                    neuragest
                   </Link>
                 </p>
               </div>
@@ -189,10 +190,10 @@ export default function About() {
                     digital arts
                   </h3>
                   <div className={styles.tools_icon}>
-                    <Icon url={"processing.png"} name="processing" />
-                    <Icon url={"p5js.png"} name="p5.js" />
-                    <Icon url={"resolume.jpg"} name="resolume" />
-                    <Icon url={"mad.jpg"} name="mad mapper" />
+                    <Icon url={"processing.png"} name="processing" title="processing"/>
+                    <Icon url={"p5js.png"} name="p5.js" title="p5.js"/>
+                    <Icon url={"resolume.jpg"} name="resolume" title="resolume"/>
+                    <Icon url={"mad.jpg"} name="mad mapper" title="mad mapper"/>
                   </div>
                 </div>
                 <div className={styles.tools_child}>
@@ -200,14 +201,14 @@ export default function About() {
                     developing
                   </h3>
                   <div className={styles.tools_icon}>
-                    <Icon url={"javascript.png"} name="javascript" />
-                    <Icon url={"sass.png"} name="sass" />
-                    <Icon url={"tailwind.jpg"} name="tailwind" />
-                    <Icon url={"php.svg"} name="php" />
-                    <Icon url={"mysql.svg"} name="mysql" />
-                    <Icon url={"nextjs.png"} name="next.js" />
-                    <Icon url={"nodejs.png"} name="node.js" />
-                    <Icon url={"git.png"} name="git" />
+                    <Icon url={"javascript.png"} name="javascript" title="javascript"/>
+                    <Icon url={"sass.png"} name="sass" title="sass"/>
+                    <Icon url={"tailwind.jpg"} name="tailwind" title="tailwind"/>
+                    <Icon url={"php.svg"} name="php" title="php"/>
+                    <Icon url={"mysql.svg"} name="mysql" title="mysql"/>
+                    <Icon url={"nextjs.png"} name="next.js" title="next.js"/>
+                    <Icon url={"nodejs.png"} name="node.js" title="node.js"/>
+                    <Icon url={"git.png"} name="git" title=""/>
                   </div>
                 </div>
                 <div className={styles.tools_child}>
@@ -215,20 +216,20 @@ export default function About() {
                     design & photography
                   </h3>
                   <div className={styles.tools_icon}>
-                    <Icon url={"figma.png"} name="figma" />
-                    <Icon url={"illustrator.png"} name="illustrator" />
-                    <Icon url={"lightroom.png"} name="lightroom" />
-                    <Icon url={"photoshop.png"} name="photoshop" />
-                    <Icon url={"xd.png"} name="adobe xd" />
+                    <Icon url={"figma.png"} name="figma" title="figma"/>
+                    <Icon url={"illustrator.png"} name="illustrator" title="illustrator"/>
+                    <Icon url={"lightroom.png"} name="lightroom" title="lightroom"/>
+                    <Icon url={"photoshop.png"} name="photoshop" title="photoshop"/>
+                    <Icon url={"xd.png"} name="adobe xd" title="adobe xd"/>
                   </div>
                 </div>
                 <div className={styles.tools_child}>
                   <h3 className={`${styles.h3} ${syne.className}`}>others</h3>
                   <div className={styles.tools_icon}>
-                    <Icon url={"mailchimp.jpg"} name="mailchimp" />
-                    <Icon url={"analytics.png"} name="analytics" />
-                    <Icon url={"mybusiness.jpg"} name="my business" />
-                    <Icon url={"firebase.png"} name="firebase" />
+                    <Icon url={"mailchimp.jpg"} name="mailchimp" title="mailchimp"/>
+                    <Icon url={"analytics.png"} name="analytics" title="analytics"/>
+                    <Icon url={"mybusiness.jpg"} name="my business" title="my business"/>
+                    <Icon url={"firebase.png"} name="firebase" title="firebase"/>
                   </div>
                 </div>
               </div>
@@ -262,7 +263,7 @@ export default function About() {
                   do you want to know more about me?<br></br>then, let&apos;s
                   get in touch
                 </p>
-                <Link href="/contact" className={styles.link}>
+                <Link href="/contact" className={styles.link} title="contact">
                   CONTACT ME
                 </Link>
               </div>

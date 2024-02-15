@@ -61,7 +61,7 @@ export default function ImageComponent({ workId, image_alt, numberImg, img4Type 
         {showFullImage && (
           <>
             <div className={styles.cross} onClick={toggleFullImage}>
-              <Image src={closeIcon} alt="Close" width={30} height={30} />
+              <Image src={closeIcon} alt="Close" width={30} height={30} title="close icon"/>
             </div>
             <Image
               id="fullImage"
@@ -71,6 +71,7 @@ export default function ImageComponent({ workId, image_alt, numberImg, img4Type 
               className={styles.full_image}
               alt={image_alt}
               loading="lazy"
+              title={image_alt}
             />
           </>
         )}
@@ -86,6 +87,7 @@ export default function ImageComponent({ workId, image_alt, numberImg, img4Type 
         alt={image_alt}
         onClick={toggleFullImage}
         loading="lazy"
+        title={image_alt}
       />
     </div>
   );

@@ -34,6 +34,7 @@ function WorkCategory({
               className={styles.link}
               id={work.id}
               key={work.id}
+              title={work.title}
             >
               <p className={`${styles.title} ${syne.className}`}>
                 <span>{work.type}</span>
@@ -54,6 +55,7 @@ function WorkCategory({
                   top: `${localY - 250}px`,
                 }}
                 alt={work.title}
+                title={work.title}
               />
             )}
           </button>

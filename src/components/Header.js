@@ -23,10 +23,10 @@ export default function Header() {
       <button className={`${styles.toggle} ${syne.className}`} onClick={toggleMenu}>{isMenuOpen ? "x" : "m"}</button>
       <div className={` ${isMenuOpen ? styles.show_element : styles.hide_element} ${styles.nav_menu_parent}`}>
         <div className={`${styles.nav_menu} ${syne.className}`}>
-          <Link href="/" className={`${styles.menu_item} ${isMenuOpen ? "" : styles.hide1}`} onClick={closeMenu}>home</Link>
-          <Link href="/work" className={`${styles.menu_item} ${isMenuOpen ? "" : styles.hide2}`} onClick={closeMenu}>work</Link>
-          <Link href="/about" className={`${styles.menu_item} ${isMenuOpen ? "" : styles.hide3}`} onClick={closeMenu}>about</Link>
-          <Link href="/contact" className={`${styles.menu_item} ${isMenuOpen ? "" : styles.hide4}`} onClick={closeMenu}>contact</Link>
+          <Link href="/" title="home" className={`${styles.menu_item} ${isMenuOpen ? "" : styles.hide1}`} onClick={closeMenu}>home</Link>
+          <Link href="/work" title="work" className={`${styles.menu_item} ${isMenuOpen ? "" : styles.hide2}`} onClick={closeMenu}>work</Link>
+          <Link href="/about" title="about" className={`${styles.menu_item} ${isMenuOpen ? "" : styles.hide3}`} onClick={closeMenu}>about</Link>
+          <Link href="/contact" title="contact" className={`${styles.menu_item} ${isMenuOpen ? "" : styles.hide4}`} onClick={closeMenu}>contact</Link>
         </div>
       </div>
     </nav>

@@ -15,6 +15,7 @@ export default function NextWork({ nextWork }) {
           <Link
             href={`/work/work${nextWork}`}
             className={`${styles.link} ${syne.className}`}
+            title="next work"
           >
             here
           </Link>

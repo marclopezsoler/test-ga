@@ -17,7 +17,7 @@ export default function Highlight({
   const smallImage = require(`/public/assets/images/home/highlighted/${filename_small}`);
 
   return (
-    <Link href={`/work/${link}`} className={styles.highlight_box}>
+    <Link href={`/work/${link}`} title={link} className={styles.highlight_box}>
       <div className={styles.first_part}>
         <div className={styles.first_part_child}>
           <h2 className={`${styles.title} ${syne.className}`}>{title}</h2>
@@ -28,6 +28,7 @@ export default function Highlight({
             className={styles.highlight_small_image}
             alt={title}
             loading="lazy"
+            title={title}
           />
           <h3 className={`${styles.subtitle} ${inter.className}`}>
             {subtitle}

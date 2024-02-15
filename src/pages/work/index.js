@@ -70,11 +70,11 @@ export default function Work() {
             <section className={styles.work_content}>
               <section className={styles.tags_parent}>
                 <div className={styles.work_tags}>
-                  <a href="#art">art</a>
-                  <a href="#developing">dev</a>
-                  <a href="#design">design</a>
-                  <a href="#photo">photo</a>
-                  <a href="#other">other</a>
+                  <a href="#art" title="art">art</a>
+                  <a href="#developing" title="developing">dev</a>
+                  <a href="#design" title="design">design</a>
+                  <a href="#photo" title="photo">photo</a>
+                  <a href="#other" title="other">other</a>
                 </div>
               </section>
               <div className={styles.work_container}>
@@ -118,11 +118,11 @@ export default function Work() {
           ) : (
             <section className={styles.work_content_mobile}>
               <section className={styles.tags_parent_mobile}>
-                <a href="#art">art</a>
-                <a href="#developing">dev</a>
-                <a href="#design">design</a>
-                <a href="#photo">photo</a>
-                <a href="#other">other</a>
+                <a href="#art" title="art">art</a>
+                <a href="#developing" title="developing">dev</a>
+                <a href="#design" title="design">design</a>
+                <a href="#photo" title="photo">photo</a>
+                <a href="#other" title="other">other</a>
               </section>
               <section
                 className={`${styles.work_items_mobile} ${

@@ -15,6 +15,7 @@ function WorkCategoryMobile({ works, categoryType }) {
               href={`/work/${work.id}`}
               className={styles.link}
               id={work.type}
+              title={work.title}
             >
               <p className={`${styles.title} ${syne.className}`}>
                 <span >{work.type}</span>
