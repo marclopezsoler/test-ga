@@ -37,8 +37,11 @@ export default function Home() {
           content="marc lópez is a digital artist and developer from Barcelona, keen on creating cool and simple stuff. Discover all his projects and experience here!"
         />
         <meta name="keywords" content="marc lópez soler, portfolio, full stack, digital artist, developer, barcelona" />
+        <meta name="author" content="Marc López Soler" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.ico" />
+        <link rel="canonical" href="https://marclopez.xyz/" />
+        <meta name="robots" content="index" />
       </Head>
       <motion.div
         className="container text-center  bg-black"

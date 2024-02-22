@@ -87,8 +87,11 @@ export default function About() {
           name="description"
           content="get to know marc lópez's background and experience"
         />
+        <meta name="author" content="Marc López Soler" />
+        <link rel="canonical" href="https://marclopez.xyz/about" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.ico" />
+        <meta name="robots" content="index" />
       </Head>
       <motion.div
         className="container text-center  bg-black"
