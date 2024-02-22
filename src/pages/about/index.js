@@ -133,7 +133,7 @@ export default function About() {
               <p style={styleBg} className={syne.className}>
                 I use my passion and skills to create visually appealing
                 products and experiences.<br></br>
-                <br></br>been working in the creative industry for the past two
+                <br></br>been working in the creative industry for the past couple of years, expanding my knowledge and gaining professional experience
               </p>
             </section>
             <section className={styles.third_section}>
