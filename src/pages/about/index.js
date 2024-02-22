@@ -206,6 +206,7 @@ export default function About() {
                     <Icon url={"tailwind.jpg"} name="tailwind" title="tailwind"/>
                     <Icon url={"php.svg"} name="php" title="php"/>
                     <Icon url={"mysql.svg"} name="mysql" title="mysql"/>
+                    <Icon url={"reactjs.png"} name="react" title="react"/>
                     <Icon url={"nextjs.png"} name="next.js" title="next.js"/>
                     <Icon url={"nodejs.png"} name="node.js" title="node.js"/>
                     <Icon url={"git.png"} name="git" title=""/>
