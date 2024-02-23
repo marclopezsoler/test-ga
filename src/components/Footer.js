@@ -19,7 +19,7 @@ export default function Footer() {
           <a href="https://files.marclopez.xyz/CV_MarcLopez.pdf" target="_blank" title="CV" className={styles.footer_link}>CV</a>
       </section>
       <section className={`${styles.footer_row} ${syne.className}`}>
-        <span className={styles.footer_copy}>© 2023 Portfolio by Marc López</span>
+        <span className={styles.footer_copy}>© 2024 Marc López</span>
       </section>
     </nav>
   );
